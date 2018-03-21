@@ -40,11 +40,7 @@
 	</section>
 	<!--END Header-->
 	<!-- Footer / End -->
-	<script src="../assets/js/prelaunch/parallax.js"></script>
-	<script>
-		var scene = document.getElementById('scene');
-		var parallaxInstance = new Parallax(scene);
-	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 	<!-- JS Libraries -->
 	<script src="../assets/js/jquery-1.12.3.min.js"></script>
 	<!-- JS Plugins -->
