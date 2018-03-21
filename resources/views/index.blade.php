@@ -76,7 +76,7 @@
 									<!-- Step -->
 									<div class="col-md-4">
 										<div class="step pl-20-lg pr-20-lg animated" data-animation-delay="2000"> <span class="icon icon-circle icon-primary"><i class="ti-ruler-pencil"></i></span>
-											<h5>2. Create Real Conversions</h5>beaut </div>
+											<h5>2. Create Real Conversions</h5></div>
 									</div>
 									<!-- Step -->
 									<div class="col-md-4">
