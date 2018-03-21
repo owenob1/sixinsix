@@ -24,7 +24,7 @@
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"> </head>
   <body class="fullheight dark bg-primary">
     <!-- Section / Home -->
-    <section id="home">
+    <section>
       <div class="v-center">
         <!-- Section -->
         <div class="container">
