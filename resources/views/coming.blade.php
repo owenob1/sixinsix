@@ -31,7 +31,7 @@
                 <p> <img class="logo logo-dark" src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix"></p> <p>
 									<h2>Calculated Scalability</h2>
 								</p>
-                  <h3><strong>Check back soon!</strong> We aren't open yet.</h3>
+                  <h4><strong>Check back soon!</strong> We aren't open yet.</h4>
                   <p>
                     <img src="../assets/img/errors/error.png" style="width:100%;" alt="Oops!">
                   </p>
