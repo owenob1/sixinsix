@@ -22,7 +22,7 @@
 	<link id="theme" rel="stylesheet" href="../assets/css/themes/theme-fire.css" />
 	<!--Popup-->
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"> </head>
-  <body class="fullheight dark bg-primary">
+  <body class="dark bg-primary">
     <!-- Section / Home -->
     <section>
       <div class="v-center">
