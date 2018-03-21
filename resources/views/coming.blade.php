@@ -40,6 +40,7 @@
 	</section>
 	<!--END Header-->
 	<!-- Footer / End -->
+	<script src="../assets/js/prelaunch/parallax.js"></script>
 	<script>
 		var scene = document.getElementById('scene');
 		var parallaxInstance = new Parallax(scene);
