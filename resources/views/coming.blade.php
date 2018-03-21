@@ -24,24 +24,26 @@
 	<link id="theme" rel="stylesheet" href="../assets/css/themes/theme-fire.css" />
 	<!--Popup-->
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"> </head>
-
 <body-prelaunch class="bg-primary">
 	<!-- Section / Home -->
-	<div class="row" style="padding:10%;">
+	<div class="row" style="padding:10%;" data-relative-input="true" id="scene">
 		<div class="col-md-6 col-md-push-3">
 			<div class="text-center">
-				<p> <img class="logo logo-dark" src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix"></p>
-				<p>
+				<p> <img class="logo logo-dark" src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix" data-depth="0.2"></p>
+				<p data-depth="0.2">
 					<h5>Calculated Scalability</h5> </p>
-				<p> <img src="../assets/img/errors/error.png" alt="quit snooping!"> </p>
-				<p class="lead"><strong>Check back soon!</strong> We aren't open yet.</h5> </div>
+				<p> <img src="../assets/img/errors/error.png" alt="quit snooping!" data-depth="0.6"> </p>
+				<p class="lead" data-depth="0.2"><strong>Check back soon!</strong> We aren't open yet.</h5>
+			</div>
 		</div>
 	</div>
 	</section>
 	<!--END Header-->
 	<!-- Footer / End -->
-	<!--3D Effect-->
-	<script src="../assets/js/perspective.js"></script>
+	<script>
+		var scene = document.getElementById('scene');
+		var parallaxInstance = new Parallax(scene);
+	</script>
 	<!-- JS Libraries -->
 	<script src="../assets/js/jquery-1.12.3.min.js"></script>
 	<!-- JS Plugins -->
@@ -52,6 +54,6 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116008327-1"></script>
 	<!--Calendly-->
 	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-</body>
+	</body>
 
 </html>
