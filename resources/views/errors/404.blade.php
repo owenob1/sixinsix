@@ -24,10 +24,7 @@
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"> </head>
   <body class="bg-primary">
     <!-- Section / Home -->
-    <section>
-      <div class="v-center dark">
-        <!-- Section -->
-        <div class="container">
+
           <div class="row">
             <div class="col-lg-8 col-lg-push-2">
               <div class="text-center">
@@ -43,8 +40,7 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+
     </section>
     <!--END Header-->
     <!-- Footer / End -->
