@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name=”robots” content=”noindex”>
 	<!-- Title -->
-	<title>SixInSix | Oops! Something went wrong.</title>
+	<title>SixInSix. | Calculated Scalability</title>
 	<!-- Favicons -->
 	<link rel="shortcut icon" href="../assets/img/favicon.png">
 	<link rel="apple-touch-icon" href="../assets/img/favicon_60x60.png">
@@ -18,17 +18,20 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
 	<!-- CSS Styles -->
 	<link rel="stylesheet" href="../assets/css/styles.css" />
+	<link rel="stylesheet" href="../assets/css/prelaunch/main.css" />
 	<!-- CSS Base -->
 	<link id="theme" rel="stylesheet" href="../assets/css/themes/theme-fire.css" />
 	<!--Popup-->
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"> </head>
   <body class="bg-primary">
     <!-- Section / Home -->
-          <div class="row dark" style="padding:10%;">
+          <div class="row dark effect" style="padding:10%;">
             <div class="col-lg-8 col-lg-push-2">
               <div class="text-center">
-                <p> <img class="logo logo-dark" src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix"></p> <br /><br />
-                  <h3><strong>Oops!</strong> We aren't open yet.</h3>
+                <p> <img class="logo logo-dark" src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix"></p> <p>
+									<h2>Calculated Scalability</h2>
+								</p>
+                  <h3><strong>Check back soon!</strong> We aren't open yet.</h3>
                   <p>
                     <img src="../assets/img/errors/error.png" style="width:100%;" alt="Oops!">
                   </p>
@@ -38,6 +41,8 @@
     </section>
     <!--END Header-->
     <!-- Footer / End -->
+		<!--3D Effect-->
+		<script src="../assets/js/perspective.js"></script>
   	<!-- JS Libraries -->
   	<script src="../assets/js/jquery-1.12.3.min.js"></script>
   	<!-- JS Plugins -->
