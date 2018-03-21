@@ -40,9 +40,6 @@
 	</section>
 	<!--END Header-->
 	<!-- Footer / End -->
-	<script>var scene = document.getElementById('scene');
-var parallaxInstance = new Parallax(scene);</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 	<!-- JS Libraries -->
 	<script src="../assets/js/jquery-1.12.3.min.js"></script>
 	<!-- JS Plugins -->
@@ -53,6 +50,11 @@ var parallaxInstance = new Parallax(scene);</script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116008327-1"></script>
 	<!--Calendly-->
 	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<script>var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene);</script>
+
 	</body>
 
 </html>
