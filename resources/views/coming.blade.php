@@ -24,9 +24,9 @@
 	<link id="theme" rel="stylesheet" href="../assets/css/themes/theme-fire.css" />
 	<!--Popup-->
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"> </head>
-<body-prelaunch class="bg-primary">
+<body-prelaunch class="bg-primary" data-relative-input="true" id="scene">
 	<!-- Section / Home -->
-	<div class="row" style="padding:10%;" data-relative-input="true" id="scene">
+	<div class="row" style="padding:10%;">
 		<div class="col-md-6 col-md-push-3">
 			<div class="text-center">
 				<p> <img class="logo logo-dark" src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix" data-depth="0.2"></p>
@@ -40,8 +40,7 @@
 	</section>
 	<!--END Header-->
 	<!-- Footer / End -->
-	<script>var scene = document.getElementById('scene');
-var parallaxInstance = new Parallax(scene);</script>
+
 	<!-- JS Libraries -->
 	<script src="../assets/js/jquery-1.12.3.min.js"></script>
 	<!-- JS Plugins -->
@@ -54,6 +53,9 @@ var parallaxInstance = new Parallax(scene);</script>
 	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+		<script>var scene = document.getElementById('scene');
+	var parallaxInstance = new Parallax(scene);</script>
 
 
 	</body>
