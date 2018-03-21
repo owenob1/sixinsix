@@ -9,7 +9,7 @@
 	<meta name="google-site-verification" content="6m-zc4JuarVvDkqce6J1cSrnk1moXwdlRWrOByrGf4w" />
 
 	<!-- Title -->
-	<title>SixInSix</title>
+	<title>SixInSix | Online Traffic & Growth Consulting</title>
 
 	<!-- Favicons -->
 	<link rel="shortcut icon" href="../assets/img/favicon.png">
