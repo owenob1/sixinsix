@@ -22,10 +22,10 @@
 	<link id="theme" rel="stylesheet" href="../assets/css/themes/theme-fire.css" />
 	<!--Popup-->
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"> </head>
-  <body class="dark bg-primary">
+  <body class="bg-primary">
     <!-- Section / Home -->
     <section>
-      <div class="v-center">
+      <div class="v-center dark">
         <!-- Section -->
         <div class="container">
           <div class="row">
