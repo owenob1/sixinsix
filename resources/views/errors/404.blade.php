@@ -25,7 +25,7 @@
   <body class="bg-primary">
     <!-- Section / Home -->
 
-          <div class="row">
+          <div class="row dark">
             <div class="col-lg-8 col-lg-push-2">
               <div class="text-center">
                 <p> <img class="logo logo-dark" src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix"></p> <br /><br />
