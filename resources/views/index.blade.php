@@ -54,7 +54,7 @@
 		</div>
 		<!-- Notification Bar -->
 		<div id="notification-bar"></div>
-	</header>
+
 	<!-- Header / End -->
 	<!-- Content -->
 	<div id="content">
@@ -95,6 +95,7 @@
 	</div>
 	</div>
 	</section>
+</header>
 	<!--END Header-->
 	<!-- Section -->
 	<section id="what" class="section-double right">
@@ -189,7 +190,7 @@
 	<!-- Section -->
 	<section id="process5" class="section-double right">
 		<div class="col-md-6 content">
-			<h2>Phase 5: Using Business Automation to Work Smarter, Not Harder.</h2> 
+			<h2>Phase 5: Using Business Automation to Work Smarter, Not Harder.</h2>
 			<p class="lead">So you have reached your targets and making serious money, but you are working long days and can barely keep up with it all. What do you do? You don't have to work harder to earn more. We are going to implement custom automation processes which are
 				going to get you working smarter, not harder. Finally you can sit back and watch your business run more efficiently than it ever has.</p>
 			<div data-target="local-scroll"><a href="#start2" class="btn btn-default">Get Started<i class="i-after ti-arrow-down"></i></a></div>
