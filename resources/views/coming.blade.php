@@ -27,7 +27,7 @@
 
 <body-prelaunch class="bg-primary">
 	<!-- Section / Home -->
-	<div class="row effect" style="padding:10%;">
+	<div class="row" style="padding:10%;">
 		<div class="col-lg-8 col-lg-push-2">
 			<div class="text-center">
 				<p> <img class="logo logo-dark" src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix"></p>
