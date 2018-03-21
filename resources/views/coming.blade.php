@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<!-- Meta -->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -23,35 +24,34 @@
 	<link id="theme" rel="stylesheet" href="../assets/css/themes/theme-fire.css" />
 	<!--Popup-->
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"> </head>
-  <body class="bg-primary">
-    <!-- Section / Home -->
-          <div class="row dark effect" style="padding:10%;">
-            <div class="col-lg-8 col-lg-push-2">
-              <div class="text-center">
-                <p> <img class="logo logo-dark" src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix"></p> <p>
-									<h2>Calculated Scalability</h2>
-								</p>
-                  <h4><strong>Check back soon!</strong> We aren't open yet.</h4>
-                  <p>
-                    <img src="../assets/img/errors/error.png" style="width:100%;" alt="Oops!">
-                  </p>
-              </div>
-            </div>
-          </div>
-    </section>
-    <!--END Header-->
-    <!-- Footer / End -->
-		<!--3D Effect-->
-		<script src="../assets/js/perspective.js"></script>
-  	<!-- JS Libraries -->
-  	<script src="../assets/js/jquery-1.12.3.min.js"></script>
-  	<!-- JS Plugins -->
-  	<script src="../assets/js/plugins.js"></script>
-  	<!-- JS Core -->
-  	<script src="../assets/js/core.js"></script>
-  	<!-- Global site tag (gtag.js) - Google Analytics -->
-  	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116008327-1"></script>
-  	<!--Calendly-->
-  	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-  </body>
+
+<body class="bg-primary">
+	<!-- Section / Home -->
+	<div class="row dark effect" style="padding:10%;">
+		<div class="col-lg-8 col-lg-push-2">
+			<div class="text-center">
+				<p> <img class="logo logo-dark" src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix"></p>
+				<p>
+					<h2>Calculated Scalability</h2> </p>
+				<p> <img src="../assets/img/errors/error.png" style="width:100%;" alt="Oops!"> </p>
+				<h5><i><strong>Check back soon!</strong> We aren't open yet.</i></h5> </div>
+		</div>
+	</div>
+	</section>
+	<!--END Header-->
+	<!-- Footer / End -->
+	<!--3D Effect-->
+	<script src="../assets/js/perspective.js"></script>
+	<!-- JS Libraries -->
+	<script src="../assets/js/jquery-1.12.3.min.js"></script>
+	<!-- JS Plugins -->
+	<script src="../assets/js/plugins.js"></script>
+	<!-- JS Core -->
+	<script src="../assets/js/core.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116008327-1"></script>
+	<!--Calendly-->
+	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+</body>
+
 </html>
