@@ -24,9 +24,9 @@
 	<link id="theme" rel="stylesheet" href="../assets/css/themes/theme-fire.css" />
 	<!--Popup-->
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"> </head>
-  <body>
+  <body class="fullheight dark bg-primary">
     <!-- Section / Home -->
-    <section id="home" class="fullheight dark bg-primary">
+    <section id="home">
       <div class="v-center">
         <!-- Section -->
         <div class="container">
@@ -34,9 +34,9 @@
             <div class="col-lg-8 col-lg-push-2">
               <div class="text-center">
                 <p> <img class="logo logo-dark" src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix"></p> <br /><br />
-                  <h3 class="font-secondary animated" data-animation="fadeIn"><strong>Oops!</strong> There is nothing here.</h3>
+                  <h3><strong>Oops!</strong> There is nothing here.</h3>
                 <p>
-                  <a href="../"><h3 class="font-secondary animated" data-animation="fadeIn">Go Home</h3></a>
+                  <a href="../"><h3>Go Home</h3></a>
                 </p>
               </div>
             </div>
