@@ -30,36 +30,36 @@
 	<!-- Loader -->
 	<div id="page-loader"><svg class="loader-1 loader-primary" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="circle" fill="none" stroke-width="3" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div>
 	<!-- Loader / End -->
-	<!-- Header -->
-	<header id="header">
-		<!-- Navigation Bar -->
-		<div id="nav-bar" style="width:100%;">
-			<!-- Menu Toggle -->
-			<div class="menu-toggle" style="margin-left:10px;"> <a href="#" data-toggle="mobile-menu" class="mobile-trigger"><span><span></span></span></a> </div>
-			<!-- Logo --><a class="logo-wrapper" href="/" style="margin-left:45px;">
-					<img class="logo logo-dark" src="../assets/img/sixinsix-black.svg" style="width:20%;" alt="SixInSix">
-				</a>
-			<nav class="module-group right">
-				<!-- Primary Menu -->
-				<div class="module menu left">
-					<ul id="nav-primary" class="nav nav-primary">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#what">What is it?</a></li>
-						<li><a href="#who">Who is it for?</a></li>
-						<li><a href="#process1">The Process</a></li>
-						<li><a href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-filled btn-primary btn-xs"><i class="i-before ti-layout-cta-center"></i>Book Consultation</button></a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-		<!-- Notification Bar -->
-		<div id="notification-bar"></div>
-	</header>
-	<!-- Header / End -->
 	<!-- Content -->
 	<div id="content">
 		<!-- Section / Home -->
 		<section id="home" class="fullheight dark bg-primary">
+			<!-- Header -->
+			<header id="header">
+				<!-- Navigation Bar -->
+				<div id="nav-bar" style="width:100%;">
+					<!-- Menu Toggle -->
+					<div class="menu-toggle" style="margin-left:10px;"> <a href="#" data-toggle="mobile-menu" class="mobile-trigger"><span><span></span></span></a> </div>
+					<!-- Logo --><a class="logo-wrapper" href="/" style="margin-left:45px;">
+							<img class="logo logo-dark" src="../assets/img/sixinsix-black.svg" style="width:20%;" alt="SixInSix">
+						</a>
+					<nav class="module-group right">
+						<!-- Primary Menu -->
+						<div class="module menu left">
+							<ul id="nav-primary" class="nav nav-primary">
+								<li><a href="#home">Home</a></li>
+								<li><a href="#what">What is it?</a></li>
+								<li><a href="#who">Who is it for?</a></li>
+								<li><a href="#process1">The Process</a></li>
+								<li><a href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-filled btn-primary btn-xs"><i class="i-before ti-layout-cta-center"></i>Book Consultation</button></a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<!-- Notification Bar -->
+				<div id="notification-bar"></div>
+			</header>
+			<!-- Header / End -->
 			<div class="v-center">
 				<!-- Section -->
 				<div class="container">
@@ -239,6 +239,7 @@
 	<!-- Google Analytics -->
 	<script>
 		window.dataLayer = window.dataLayer || [];
+
 		function gtag() {
 			dataLayer.push(arguments);
 		}

@@ -33,10 +33,6 @@
                   <p>
                     <img src="../assets/img/errors/error.png" style="width:100%;" alt="Oops!">
                   </p>
-                <p>
-                  <a href="../"><button type="button" class="btn btn-default btn-lg">Go Home</button></a>
-                </p>
-
               </div>
             </div>
           </div>
