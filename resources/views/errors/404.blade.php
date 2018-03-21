@@ -24,10 +24,10 @@
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"> </head>
   <body class="fullheight dark bg-primary">
     <!-- Section / Home -->
-    <section id="home" class="v-center">
+    <section id="home">
       <div class="v-center">
         <!-- Section -->
-        <div class="container v-center">
+        <div class="container">
           <div class="row">
             <div class="col-lg-8 col-lg-push-2">
               <div class="text-center">
