@@ -33,7 +33,7 @@
 	<!-- Header -->
 	<header id="header">
 		<!-- Navigation Bar -->
-		<div id="nav-bar">
+		<div id="nav-bar" style="width:100%;">
 			<!-- Menu Toggle -->
 			<div class="menu-toggle" style="margin-left:10px;"> <a href="#" data-toggle="mobile-menu" class="mobile-trigger"><span><span></span></span></a> </div>
 			<!-- Logo --><a class="logo-wrapper" href="/" style="margin-left:45px;">
@@ -54,7 +54,7 @@
 		</div>
 		<!-- Notification Bar -->
 		<div id="notification-bar"></div>
-
+	</header>
 	<!-- Header / End -->
 	<!-- Content -->
 	<div id="content">
@@ -95,7 +95,6 @@
 	</div>
 	</div>
 	</section>
-</header>
 	<!--END Header-->
 	<!-- Section -->
 	<section id="what" class="section-double right">
