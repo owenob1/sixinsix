@@ -32,13 +32,14 @@
             <div class="col-lg-8 col-lg-push-2">
               <div class="text-center">
                 <p> <img class="logo logo-dark" src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix"></p> <br /><br />
-                  <h3><strong>Oops!</strong> There is nothing here.</h3>
+                  <h3><strong>Oops!</strong> Something went wrong.</h3>
+                  <p>
+                    <img src="../assets/img/errors/error.png" style="width:100%;" alt="Oops!">
+                  </p>
                 <p>
                   <a href="../"><button type="button" class="btn btn-default btn-lg">Go Home</button></a>
                 </p>
-                <p>
-                  <img src="../assets/img/errors/error.png" style="width:100%;" alt="Oops!">
-                </p>
+
               </div>
             </div>
           </div>
