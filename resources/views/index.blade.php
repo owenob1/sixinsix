@@ -33,11 +33,11 @@
 	<!-- Content -->
 	<div id="content">
 		<!-- Section / Home -->
-		<section id="home" class="fullheight dark bg-primary">
+		<section id="home" class="fullheight bg-primary">
 			<!-- Header -->
 			<header id="header">
 				<!-- Navigation Bar -->
-				<div id="nav-bar" style="width:100%;">
+				<div id="nav-bar" class="dark" style="width:100%;">
 					<!-- Menu Toggle -->
 					<div class="menu-toggle" style="margin-left:10px;"> <a href="#" data-toggle="mobile-menu" class="mobile-trigger"><span><span></span></span></a> </div>
 					<!-- Logo --><a class="logo-wrapper" href="/" style="margin-left:45px;">
