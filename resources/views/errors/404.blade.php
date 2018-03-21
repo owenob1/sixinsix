@@ -34,10 +34,7 @@
             <div class="col-lg-8 col-lg-push-2">
               <div class="text-center">
                 <p> <img class="logo logo-dark" src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix"></p> <br /><br />
-                <p>
                   <h3 class="font-secondary animated" data-animation="fadeIn"><strong>Oops!</strong> There is nothing here.</h3>
-
-                  </p>
                 <p>
                   <a href="../"><h3 class="font-secondary animated" data-animation="fadeIn">Go Home</h3></a>
                 </p>
@@ -46,10 +43,6 @@
           </div>
         </div>
       </div>
-      <div class="v-bottom text-center pb-30" data-target="local-scroll"> <a href="#what" class="btn btn-default">What is it? <i class="i-after ti-arrow-down"></i></a> </div>
-    </div>
-    </div>
-    </div>
     </section>
     <!--END Header-->
   </body>
