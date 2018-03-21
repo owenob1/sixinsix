@@ -24,7 +24,6 @@
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"> </head>
   <body class="bg-primary">
     <!-- Section / Home -->
-
           <div class="row dark" style="padding:10%;">
             <div class="col-lg-8 col-lg-push-2">
               <div class="text-center">
@@ -33,11 +32,9 @@
                   <p>
                     <img src="../assets/img/errors/error.png" style="width:100%;" alt="Oops!">
                   </p>
-
               </div>
             </div>
           </div>
-
     </section>
     <!--END Header-->
     <!-- Footer / End -->
