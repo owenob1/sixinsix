@@ -4,11 +4,9 @@
 	<!-- Meta -->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="SixInSix is a growth hacking consulting plan designed to help founders create their first six figures in six months or less through increasing traffic and conversions.">
-	<meta name="keywords" content="Growth, Traffic, Hacking, Online, Consulting, Agency, Conversion">
-	<meta name="author" content="SixInSix">
+	<meta name=”robots” content=”noindex”>
 	<!-- Title -->
-	<title>SixInSix | Online Traffic & Growth Hacking Consulting</title>
+	<title>SixInSix | Oops! Something went wrong.</title>
 	<!-- Favicons -->
 	<link rel="shortcut icon" href="../assets/img/favicon.png">
 	<link rel="apple-touch-icon" href="../assets/img/favicon_60x60.png">
@@ -37,6 +35,9 @@
                   <h3><strong>Oops!</strong> There is nothing here.</h3>
                 <p>
                   <a href="../"><button type="button" class="btn btn-default btn-lg">Go Home</button></a>
+                </p>
+                <p>
+                  <img src="../assets/img/errors/error.png" style="width:100%;" alt="Oops!">
                 </p>
               </div>
             </div>
