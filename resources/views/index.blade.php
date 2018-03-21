@@ -5,8 +5,7 @@
 	<!-- Meta -->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="SixInSix is a growth hacking consulting plan designed to help founders create their first six figures in six months or less through increasing traffic and conversions.">
-	<meta name="keywords" content="Growth, Traffic, Hacking, Online, Consulting, Agency, Conversion">
+
 	<meta name="author" content="SixInSix">
 	<!-- Title -->
 	<title>SixInSix | Online Traffic & Growth Hacking Consulting</title>
@@ -36,8 +35,7 @@
 		<div id="nav-bar">
 			<!-- Menu Toggle -->
 			<div class="menu-toggle" style="margin-left:10px;"> <a href="#" data-toggle="mobile-menu" class="mobile-trigger"><span><span></span></span></a> </div>
-			<!-- Logo -->
-			<a class="logo-wrapper" href="/" style="margin-left:45px;">
+			<!-- Logo --><a class="logo-wrapper" href="/" style="margin-left:45px;">
 					<img class="logo logo-dark" src="../assets/img/sixinsix-black.svg" style="width:20%;" alt="SixInSix">
 				</a>
 			<nav class="module-group right">
@@ -78,7 +76,7 @@
 									<!-- Step -->
 									<div class="col-md-4">
 										<div class="step pl-20-lg pr-20-lg animated" data-animation-delay="2000"> <span class="icon icon-circle icon-primary"><i class="ti-ruler-pencil"></i></span>
-											<h5>2. Create Real Conversions</h5></div>
+											<h5>2. Create Real Conversions</h5>beaut </div>
 									</div>
 									<!-- Step -->
 									<div class="col-md-4">
