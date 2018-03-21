@@ -29,11 +29,11 @@
 	<div class="row" style="padding:10%;">
 		<div class="col-md-6 col-md-push-3">
 			<div class="text-center">
-				<p> <img class="logo logo-dark" src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix" data-depth="0.2"></p>
-				<p data-depth="0.2">
+				<p> <img class="logo logo-dark layer" src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix" data-depth="0.2"></p>
+				<p class="layer" data-depth="0.2">
 					<h5>Calculated Scalability</h5> </p>
-				<p> <img src="../assets/img/errors/error.png" alt="quit snooping!" data-depth="0.6"> </p>
-				<p class="lead" data-depth="0.2"><strong>Check back soon!</strong> We aren't open yet.</h5>
+				<p> <img class="layer" src="../assets/img/errors/error.png" alt="quit snooping!" data-depth="0.6"> </p>
+				<p class="lead layer" data-depth="0.2"><strong>Check back soon!</strong> We aren't open yet.</h5>
 			</div>
 		</div>
 	</div>
@@ -54,8 +54,10 @@
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
-		<script>var scene = document.getElementById('scene');
-	var parallaxInstance = new Parallax(scene);</script>
+		<script>
+		var scene = document.getElementById('scene');
+	var parallaxInstance = new Parallax(scene);
+</script>
 
 
 	</body>
