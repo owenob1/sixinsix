@@ -26,17 +26,17 @@
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"> </head>
   <body class="fullheight dark bg-primary">
     <!-- Section / Home -->
-    <section id="home">
+    <section id="home" class="v-center">
       <div class="v-center">
         <!-- Section -->
-        <div class="container">
+        <div class="container v-center">
           <div class="row">
             <div class="col-lg-8 col-lg-push-2">
               <div class="text-center">
                 <p> <img class="logo logo-dark" src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix"></p> <br /><br />
                   <h3><strong>Oops!</strong> There is nothing here.</h3>
                 <p>
-                  <a href="../"><h3>Go Home</h3></a>
+                  <a href="../"><button type="button" class="btn btn-default btn-lg">Go Home</button></a>
                 </p>
               </div>
             </div>
@@ -45,5 +45,16 @@
       </div>
     </section>
     <!--END Header-->
+    <!-- Footer / End -->
+  	<!-- JS Libraries -->
+  	<script src="../assets/js/jquery-1.12.3.min.js"></script>
+  	<!-- JS Plugins -->
+  	<script src="../assets/js/plugins.js"></script>
+  	<!-- JS Core -->
+  	<script src="../assets/js/core.js"></script>
+  	<!-- Global site tag (gtag.js) - Google Analytics -->
+  	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116008327-1"></script>
+  	<!--Calendly-->
+  	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
   </body>
 </html>
