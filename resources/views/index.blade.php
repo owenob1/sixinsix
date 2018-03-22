@@ -65,12 +65,12 @@
 					<div class="row">
 						<div class="col-lg-8 col-lg-push-2">
 							<div class="text-center">
-								<p> <img class="logo logo-dark" src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix"></p> <br /><br />
-								<h3 class="font-secondary animated" data-animation="fadeIn">Make <strong>Six Figures</strong> in <strong>Six Months</strong></h3> <br /><br />
+								<p> <img class="logo logo-dark animated" data-animation="fadeIn" data-animation-delay="300" src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix"></p> <br /><br />
+								<h3 class="font-secondary animated" data-animation="fadeIn" data-animation="fadeIn" data-animation-delay="800">Make <strong>Six Figures</strong> in <strong>Six Months</strong></h3> <br /><br />
 								<div class="row workflow-steps"> <span class="workflow-progress animated"></span>
 									<!-- Step -->
 									<div class="col-md-4">
-										<div class="step pl-20-lg pr-20-lg animated" data-animation-delay="700"> <span class="icon icon-circle icon-primary"><i class="ti-pie-chart"></i></span>
+										<div class="step pl-20-lg pr-20-lg animated" data-animation-delay="500"> <span class="icon icon-circle icon-primary"><i class="ti-pie-chart"></i></span>
 											<h5>1. High Value Online Traffic</h5> </div>
 									</div>
 									<!-- Step -->
@@ -89,7 +89,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="v-bottom text-center pb-30" data-target="local-scroll"> <a href="#what" class="btn btn-default">What is it? <i class="i-after ti-arrow-down"></i></a> </div>
+			<div class="v-bottom text-center pb-30 animated" data-animation="fadeInUp" data-animation-delay="4200" data-target="local-scroll"> <a href="#what" class="btn btn-default">What is it? <i class="i-after ti-arrow-down"></i></a> </div>
 	</div>
 	</div>
 	</div>
@@ -97,7 +97,7 @@
 	<!--END Header-->
 	<!-- Section -->
 	<section id="what" class="section-double right">
-		<div class="col-md-6 content">
+		<div class="col-md-6 content" animated" data-animation="fadeIn" data-animation-delay="400"">
 			<h2>What is it?</h2>
 			<p class="lead"><strong>SixInSix</strong> is a growth hacking consulting plan designed to help founders create their first six figures in six months or less.</p>
 			<p class="lead"> Simply put, this plan is designed for anyone wanting to scale their online business to at least <strong>$100,000 and over within 6 months</strong>. This program is about implementing online strategies and processes which will scale and automate the
@@ -124,10 +124,11 @@
 	<!-- Section -->
 	<section id="start1" class="dark bg-primary">
 		<div class="container text-center">
-			<h2 class="mb-60">What Are You Waiting For?</h2>
-			<h4>We are so confident in our plan that we would love to meet with you for a <strong>free consultation</strong> to analyse your business. No obligation, just added value.</h4> <br /><br /> <a href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-default btn-lg"><i class="i-before ti-layout-cta-center"></i>Book Consultation</button></a> </div>
+			<h2 class="mb-60 animated" data-animation="fadeIn" data-animation-delay="400">What Are You Waiting For?</h2>
+			<h4 class=" animated" data-animation="fadeIn" data-animation-delay="400">We are so confident in our plan that we would love to meet with you for a <strong>free consultation</strong> to analyse your business. No obligation, just added value.</h4> <br /><br />
+			<a class=" animated" data-animation="fadeIn" data-animation-delay="400" href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-default btn-lg"><i class="i-before ti-layout-cta-center"></i>Book Consultation</button></a> </div>
 		<br /><br /><br />
-		<div class="v-bottom text-center pb-30" data-target="local-scroll"> <a href="#process1"><h5>Learn The Process</h5> <i class="i-after ti-arrow-down"></i></a> </div>
+		<div class="v-bottom text-center pb-30 animated" data-animation="fadeInDown" data-animation-delay="600" data-target="local-scroll"> <a href="#process1"><h5>Learn The Process</h5> <i class="i-after ti-arrow-down"></i></a> </div>
 	</section>
 	</div>
 	<!-- Content / End -->
@@ -205,26 +206,23 @@
 			<!-- Calendly link widget begin --><a href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-default btn-lg"><i class="i-before ti-layout-cta-center"></i>Book Consultation</button></a> </div>
 	</section>
 	</div>
-	<!-- Content / End -->
 	<!-- Footer -->
-	<footer id="footer" class="dark bg-secondary pt-90 pb-60">
-		<div class="container">
-			<div class="row mb-80">
-				<div class="col-md-4"> <img src="../assets/img/sixinsixlogo.svg" style="width:40%;" alt="SixInSix"> <br /><br /><br /> </div>
-				<div class="col-md-8"> </div>
-			</div>
-			<div class="row pt-60 border-top">
-				<div class="col-sm-6 text-muted"> Copyright SixInSix 2018©. All rights reserved. </div>
-				<div class="col-sm-6 text-right">
-					<ul class="nav nav-inline nav-sm mt-10">
-						<li><a href="#home" data-target="local-scroll">Back To Top</a></li>
-						<li><a href="mailto:hello@sixinsix.co">Contact Us</a></li>
-					</ul>
-				</div>
-			</div>
+	<footer id="footer" class="dark bg-secondary pb-60">
+		<div class="container text-center">
+			<img src="../assets/img/sixinsixlogo.svg" style="width:20%; padding:20px;" alt="SixInSix">
+			<div class="text-muted"> Copyright SixInSix 2018 ©. All rights reserved. </div>
+				<ul class="nav nav-inline nav-sm mt-10">
+					<li><a href="#home" data-target="local-scroll">Back To Top</a></li>
+					<li><a href="mailto:hello@sixinsix.co">Contact Us</a></li>
+				</ul>
 		</div>
+
 	</footer>
 	<!-- Footer / End -->
+
+
+
+
 	<!-- JS Libraries -->
 	<script src="../assets/js/jquery-1.12.3.min.js"></script>
 	<!-- JS Plugins -->
