@@ -44,26 +44,11 @@
 
 <body>
 
-    {{-- SIDEBAR --}}
-    <div id="sidebar">
-        @include('platform.partials.sidebar')
-    </div>
-
-    {{-- HEADER --}}
-    <div id="header">
-        @include('platform.partials.header')
-    </div>
-
 
     {{-- MAIN --}}
     <main class="kt-mainpanel">
         @yield('content')
     </main>
-
-    {{-- FOOTER --}}
-    <div id="site-footer">
-        @include('platform.partials.footer')
-    </div>
 
     {{-- JS --}}
 

@@ -1,13 +1,11 @@
 @extends('platform.layouts.app')
 
-@section('title', 'Dashboard')
-
 @section('content')
 
 
   <!-- ##### MAIN PANEL ##### -->
    <div class="kt-pagetitle">
-     <h5>Dashboard</h5>
+     <h5>Edit Profile</h5>
    </div><!-- kt-pagetitle -->
 
    <div class="kt-pagebody">

@@ -17,7 +17,7 @@
 
        <!-- nav-item-->
        <li class="nav-item">
-         <a href="index.html" class="nav-link active">
+         <a href="../platform" class="nav-link {{ (\Request::route()->getName() == 'platform.pages.dashboard') ? 'active' : '' }}">
            <i class="icon ion-home"></i>
            <span>Dashboard</span>
          </a>
@@ -32,7 +32,7 @@
          </a>
          <ul class="nav-sub">
                       <li class="nav-item"><a href="form-elements.html" class="nav-link">View</a></li>
-                                            <li class="nav-item"><a href="form-elements.html" class="nav-link">Edit</a></li>
+                      <li class="nav-item"><a href="../platform/user_profile/edit" class="nav-link">Edit</a></li>
          </ul>
       </li>
 
@@ -44,14 +44,14 @@
         </a>
         <ul class="nav-sub">
                      <li class="nav-item"><a href="form-elements.html" class="nav-link">Invoices</a></li>
-          <li class="nav-item"><a href="form-elements.html" class="nav-link">Payment Method</a></li>
+          <li class="nav-item"><a href="../platform/user_profile/edit" class="nav-link">Payment Method</a></li>
         </ul>
      </li>
 
 
      <!-- nav-item-->
      <li class="nav-item">
-       <a href="index.html" class="nav-link">
+       <a href="../platform/bugreport" class="nav-link {{ (\Request::route()->getName() == 'platform.pages.bugreport') ? 'active' : '' }}">
          <i class="icon ion-bug"></i>
          <span>Bug Report</span>
        </a>
