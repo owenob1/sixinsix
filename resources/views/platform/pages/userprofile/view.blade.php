@@ -1,23 +1,19 @@
 @extends('platform.layouts.app')
 
-@section('title', 'Dashboard')
+@section('title', 'Profile')
 
 @section('content')
 
 
   <!-- ##### MAIN PANEL ##### -->
    <div class="kt-pagetitle">
-     <h5>Dashboard</h5>
+     <h5>{{ Auth::user()->name }}</h5>
    </div><!-- kt-pagetitle -->
 
    <div class="kt-pagebody">
-
 <div class="card pd-20 pd-sm-40">
-
-  <h5>Your Analytics Data is being processed.</h5>
-  This can take up to 48 hrs, you will recieve an email once it's complete.
+     Your profile will be here soon, {{ Auth::user()->name }}.
 </div>
-
    </div><!-- kt-pagebody -->
 
 

@@ -12,7 +12,9 @@
 
    <div class="kt-pagebody">
 
-     <!-- your content goes here -->
+     <div class="card pd-20 pd-sm-40">
+       This is where you enter bug reports.
+     </div>
 
    </div><!-- kt-pagebody -->
 

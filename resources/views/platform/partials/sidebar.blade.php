@@ -31,7 +31,7 @@
            <span>User Profile</span>
          </a>
          <ul class="nav-sub">
-                      <li class="nav-item"><a href="form-elements.html" class="nav-link">View</a></li>
+                      <li class="nav-item"><a href="{{ url('platform/userprofile/view') }}" class="nav-link">View</a></li>
                       <li class="nav-item"><a href="{{ url('platform/userprofile/edit') }}" class="nav-link">Edit</a></li>
          </ul>
       </li>
