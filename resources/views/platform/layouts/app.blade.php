@@ -33,13 +33,13 @@
     <title>@yield('title') | SixInSix Platform</title>
 
     <!-- vendor css -->
-    <link href="../platform_assets/lib/font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="../platform_assets/lib/Ionicons/css/ionicons.css" rel="stylesheet">
-    <link href="../platform_assets/lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
-    <link href="../platform_assets/lib/highlightjs/github.css" rel="stylesheet">
+    <link href="{{ asset('platform_assets/lib/font-awesome/css/font-awesome.css') }}" rel="stylesheet">
+    <link href="{{ asset('platform_assets/lib/Ionicons/css/ionicons.css') }}" rel="stylesheet">
+    <link href="{{ asset('platform_assets/lib/perfect-scrollbar/css/perfect-scrollbar.css') }}" rel="stylesheet">
+    <link href="{{ asset('platform_assets/lib/highlightjs/github.css') }}" rel="stylesheet">
 
     <!-- Katniss CSS -->
-    <link rel="stylesheet" href="../platform_assets/css/katniss.css">
+    <link rel="stylesheet" href="{{ asset('platform_assets/css/katniss.css') }}">
   </head>
 
 <body>
@@ -52,12 +52,7 @@
     {{-- HEADER --}}
     <div id="header">
         @include('platform.partials.header')
-        <div class="kt-breadcrumb">
-          <nav class="breadcrumb">
-            <a class="breadcrumb-item" href="index.html">SixInSix</a>
-            <span class="breadcrumb-item active">@yield('title')</span>
-          </nav>
-        </div><!-- kt-breadcrumb -->
+
     </div>
 
 
@@ -75,13 +70,13 @@
 
     {{-- JS --}}
 
-        <script src="../platform_assets/lib/jquery/jquery.js"></script>
-        <script src="../platform_assets/lib/popper.js/popper.js"></script>
-        <script src="../platform_assets/lib/bootstrap/bootstrap.js"></script>
-        <script src="../platform_assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
-        <script src="../platform_assets/lib/moment/moment.js"></script>
-        <script src="../platform_assets/lib/highlightjs/highlight.pack.js"></script>
-        <script src="../platform_assets/js/katniss.js"></script>
+        <script src="{{ asset('platform_assets/lib/jquery/jquery.js') }}"></script>
+        <script src="{{ asset('platform_assets/lib/popper.js/popper.js') }}"></script>
+        <script src="{{ asset('platform_assets/lib/bootstrap/bootstrap.js') }}"></script>
+        <script src="{{ asset('platform_assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js') }}"></script>
+        <script src="{{ asset('platform_assets/lib/moment/moment.js') }}"></script>
+        <script src="{{ asset('platform_assets/lib/highlightjs/highlight.pack.js') }}"></script>
+        <script src="{{ asset('platform_assets/js/katniss.js') }}"></script>
 
 </body>
 </html>
