@@ -1,7 +1,11 @@
 <?php
 
 Route::get('/', function () {
-    return view('index');
+    return view('frontend.index');
+});
+
+Route::get('/platform', function () {
+    return view('platform.pages.dashboard');
 });
 
 Auth::routes();

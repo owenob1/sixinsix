@@ -49,6 +49,7 @@
 						<li><a href="{{ route('register') }}">{{ __('Register') }}</a></li>
           @else
 						<li><a href="#">{{ Auth::user()->name }}</a></li>
+            <li><a href="{{ route('password.request')}}">Reset Password</a></li>
 						<li><a href="{{ route('logout') }}"onclick="event.preventDefault();document.getElementById('logout-form').submit();">{{ __('Logout') }}</a></li>
 					</ul>
 				</div>
