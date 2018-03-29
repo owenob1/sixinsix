@@ -86,9 +86,3 @@
   @endauth
   </div><!-- kt-headpanel-right -->
 </div><!-- kt-headpanel -->
-<div class="kt-breadcrumb">
-  <nav class="breadcrumb">
-    <a class="breadcrumb-item" href="index.html">SixInSix</a>
-    <span class="breadcrumb-item active">Dashboard</span>
-  </nav>
-</div><!-- kt-breadcrumb -->
