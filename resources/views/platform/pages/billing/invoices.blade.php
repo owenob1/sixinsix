@@ -28,7 +28,7 @@
                      <td>{{ $invoice->date()->toFormattedDateString() }}</td>
                      <td>Startup Growth Plan</td>
                      <td>{{ $invoice->total() }}</td>
-                     <td><a href="/platform/billing/invoice/{{ $invoice->id }}">Download</a></td>
+                     <td><a href="/platform/billing/invoice/{{ $invoice->id }}"><i class="icon ion-document-text"></i></a></td>
                    </tr>
                  @endforeach
                  </tbody>
