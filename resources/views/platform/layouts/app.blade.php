@@ -6,6 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+
     <!-- Twitter -->
     <meta name="twitter:site" content="@themepixels">
     <meta name="twitter:creator" content="@themepixels">
@@ -69,7 +73,7 @@
     </div>
 
     {{-- JS --}}
-
+        <script src="{{ asset('js/app.js') }}"></script>
         <script src="{{ asset('platform_assets/lib/jquery/jquery.js') }}"></script>
         <script src="{{ asset('platform_assets/lib/popper.js/popper.js') }}"></script>
         <script src="{{ asset('platform_assets/lib/bootstrap/bootstrap.js') }}"></script>
@@ -77,6 +81,8 @@
         <script src="{{ asset('platform_assets/lib/moment/moment.js') }}"></script>
         <script src="{{ asset('platform_assets/lib/highlightjs/highlight.pack.js') }}"></script>
         <script src="{{ asset('platform_assets/js/katniss.js') }}"></script>
+        <script src='https://js.stripe.com/v2/' type='text/javascript'></script>
+        <script src="{{asset('platform_assets/js/stripe.js')}}"></script>
 
 </body>
 </html>

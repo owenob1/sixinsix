@@ -43,8 +43,9 @@
           <span>Billing</span>
         </a>
         <ul class="nav-sub">
-                     <li class="nav-item"><a href="form-elements.html" class="nav-link">Invoices</a></li>
-          <li class="nav-item"><a href="{{ url('platform/bugreport') }}" class="nav-link">Payment Method</a></li>
+          <li class="nav-item"><a href="{{ url('platform/payment') }}" class="nav-link">Subscribe</a></li>
+          <li class="nav-item"><a href="{{ url('platform/billing/invoices') }}" class="nav-link">Invoices</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Payment Method</a></li>
         </ul>
      </li>
 
