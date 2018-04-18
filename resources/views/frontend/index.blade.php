@@ -18,7 +18,7 @@
 						</div>
 					</div>
 				</div>
-			
+
 			<div class="v-bottom text-center pb-30 animated" data-animation="fadeInUp" data-animation-delay="1200" data-target="local-scroll"> <a href="#what" class="btn btn-default" style="color:white;">What is it? <i class="i-after ti-arrow-down"></i></a> </div>
 	</div>
 	</div>
@@ -30,8 +30,8 @@
 	<section id="what" class="section-double right">
 		<div class="col-md-6 content" animated" data-animation="fadeIn" data-animation-delay="400"">
 			<h2>What is it?</h2>
-			<p class="lead"><strong>SixInSix</strong> is a growth hacking consulting plan designed to help founders create their first six figures in six months or less.</p>
-			<p class="lead"> Simply put, this plan is designed for anyone wanting to scale their online business to at least <strong>$100,000 and over within 6 months</strong>. This program is about implementing online strategies and processes which will scale and automate the
+			<p class="lead"><strong>SixInSix</strong> is a growth hacking consulting plan designed to help founders create their first six figures in six months.</p>
+			<p class="lead"> Simply put, this plan is designed for anyone wanting to scale their online business rapidly over 6 months</strong>, whilst learning how to operate the system we help put in place. This program is about implementing online strategies and processes which will scale and automate the
 				online aspects of your business. We want to show you how to work smarter and not harder to reach new benchmarks in your business. </p>
 			<div data-target="local-scroll"><a href="#who" class="btn btn-default">Next<i class="i-after ti-arrow-down"></i></a></div>
 		</div>
