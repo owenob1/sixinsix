@@ -18,7 +18,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			
 			<div class="v-bottom text-center pb-30 animated" data-animation="fadeInUp" data-animation-delay="1200" data-target="local-scroll"> <a href="#what" class="btn btn-default" style="color:white;">What is it? <i class="i-after ti-arrow-down"></i></a> </div>
 	</div>
 	</div>
