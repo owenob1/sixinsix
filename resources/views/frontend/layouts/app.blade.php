@@ -7,7 +7,6 @@
 	<!-- Meta -->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
 	<meta name="author" content="SixInSix">
 	<!-- Title -->
 	<title>SixInSix | Online Traffic & Growth Hacking Consulting</title>
@@ -25,8 +24,8 @@
 	<!-- CSS Base -->
 	<link id="theme" rel="stylesheet" href="../assets/css/themes/theme-fire.css" />
 	<!--Popup-->
-	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-</head>
+	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"> </head>
+
 <body class="one-page header-absolute">
 	<!-- Loader -->
 	<div id="page-loader"><svg class="loader-1 loader-primary" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="circle" fill="none" stroke-width="3" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div>
@@ -59,58 +58,55 @@
 	</header>
 	<!-- Header / End -->
 
-
-
-
-
-
-
-
-<body>
-
-@yield('content')
-
-
-    <!-- Footer -->
-  	<footer id="footer" class="dark bg-secondary pb-60">
-  		<div class="container text-center">
-  			<img src="../assets/img/sixinsixlogo.svg" style="width:20%; padding:20px;" alt="SixInSix">
-  			<div class="text-muted"> Copyright SixInSix 2018 ©. All rights reserved. </div>
-  				<ul class="nav nav-inline nav-sm mt-10">
-  					<li><a href="#home" data-target="local-scroll">Back To Top</a></li>
-  					<li><a href="mailto:hello@sixinsix.co">Contact Us</a></li>
-  				</ul>
-  		</div>
-
-  	</footer>
-  	<!-- Footer / End -->
-
-
-
-
-  	<!-- JS Libraries -->
-  	<script src="../assets/js/jquery-1.12.3.min.js"></script>
-  	<!-- JS Plugins -->
-  	<script src="../assets/js/plugins.js"></script>
-  	<!-- JS Core -->
-  	<script src="../assets/js/core.js"></script>
-  	<!-- Global site tag (gtag.js) - Google Analytics -->
-  	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116008327-1"></script>
-  	<!--Calendly-->
-  	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-  	<!-- Google Analytics -->
-  	<script>
-  		window.dataLayer = window.dataLayer || [];
-  		function gtag() {
-  			dataLayer.push(arguments);
-  		}
-  		gtag('js', new Date());
-  		gtag('config', 'UA-116008327-1');
-  	</script>
-
+	<body> @yield('content')
+		<!-- Footer -->
+		<footer id="footer" class="dark bg-secondary pb-60">
+			<div class="container text-center"> <img src="../assets/img/sixinsixlogo.svg" style="width:20%; padding:20px;" alt="SixInSix">
+				<div class="text-muted"> Copyright SixInSix 2018 ©. All rights reserved. </div>
+				<ul class="nav nav-inline nav-sm mt-10">
+					<li><a href="#home" data-target="local-scroll">Back To Top</a></li>
+					<li><a href="mailto:hello@sixinsix.co">Contact Us</a></li>
+				</ul>
+			</div>
+		</footer>
+		<!-- Footer / End -->
+		<!-- JS Libraries -->
+		<script src="../assets/js/jquery-1.12.3.min.js"></script>
+		<!-- JS Plugins -->
+		<script src="../assets/js/plugins.js"></script>
+		<!-- JS Core -->
+		<script src="../assets/js/core.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116008327-1"></script>
+		<!--Calendly-->
+		<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+		<!-- Google Analytics -->
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'UA-116008327-1');
+		</script>
 		<!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4490170.js"></script>
-<!-- End of HubSpot Embed Code -->
-  </body>
+		<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4490170.js"></script>
+		<!-- End of HubSpot Embed Code -->
+		<!-- Drip -->
+		<script type="text/javascript">
+			var _dcq = _dcq || [];
+			var _dcs = _dcs || {};
+			_dcs.account = '6953107';
+			(function() {
+				var dc = document.createElement('script');
+				dc.type = 'text/javascript';
+				dc.async = true;
+				dc.src = '//tag.getdrip.com/6953107.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(dc, s);
+			})();
+		</script>
+		<!-- end Drip -->
+	</body>
 
 </html>
