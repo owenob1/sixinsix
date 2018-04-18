@@ -12,23 +12,20 @@
 						<div class="col-lg-8 col-lg-push-2">
 							<div class="text-center">
 								<p> <img class="logo logo-dark animated" data-animation="fadeIn" data-animation-delay="300" src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix"></p> <br /><br />
-								<h3 class="font-secondary animated" data-animation="fadeIn" data-animation="fadeIn" data-animation-delay="800">Make <strong>Six Figures</strong> in <strong>Six Months</strong></h3> <br /><br />
-								<div class="row workflow-steps"> <span class="workflow-progress animated"></span>
-									<!-- Step -->
-									<div class="col-md-4">
-										<div class="step pl-20-lg pr-20-lg animated" data-animation-delay="500"> <span class="icon icon-circle icon-primary"><i class="ti-pie-chart"></i></span>
-											<h5>1. High Value Online Traffic</h5> </div>
-									</div>
-									<!-- Step -->
-									<div class="col-md-4">
-										<div class="step pl-20-lg pr-20-lg animated" data-animation-delay="2000"> <span class="icon icon-circle icon-primary"><i class="ti-ruler-pencil"></i></span>
-											<h5>2. Create Real Conversions</h5></div>
-									</div>
-									<!-- Step -->
-									<div class="col-md-4">
-										<div class="step pl-20-lg pr-20-lg animated" data-animation-delay="3300"> <span class="icon icon-circle icon-primary"><i class="ti-stats-up"></i></span>
-											<h5>3. Automate & Scale</h5> </div>
-									</div>
+								<h3 class="font-secondary animated" data-animation="fadeIn" data-animation="fadeIn" data-animation-delay="600">Make <strong>Six Figures</strong> in <strong>Six Months</strong></h3> <br /><br />
+								<!-- semrush siteaudit widget -->
+								<div  class="animated" data-animation="fadeIn" data-animation="fadeIn" data-animation-delay="900">
+
+
+								<div id="ssa-widget"></div>
+								<script type="text/javascript" src="https://www.semrush.com/leadgen/static/js/widget.min.js"></script>
+
+								<script type="text/javascript">
+									new SEMRUSH.SiteauditWidget({
+										widgetApiKey: "5acd8da85f50e930233a4783"
+									});
+								</script>
+								<!-- /semrush siteaudit widget -->
 								</div>
 							</div>
 						</div>
@@ -41,6 +38,7 @@
 	</div>
 	</section>
 	<!--END Header-->
+
 	<!-- Section -->
 	<section id="what" class="section-double right">
 		<div class="col-md-6 content" animated" data-animation="fadeIn" data-animation-delay="400"">

@@ -15,17 +15,26 @@
       <div class="kt-pagebody">
 
         <div class="row">
-          <div class="col-md-4 col-lg-3">
-            <label class="content-left-label">Your Profile Photo</label>
-            <figure class="edit-profile-photo">
-              <img src="{{ Auth::user()->profile_pic }}" class="img-fluid" alt="">
-              <figcaption>
-                <a href="" class="btn btn-dark">Edit Photo</a>
-              </figcaption>
-            </figure>
 
-          </div><!-- col-3 -->
           <div class="col-md-8 col-lg-9 mg-t-30 mg-md-t-0">
+            <label class="content-left-label">Your Data</label>
+            <div class="card bg-gray-200 bd-0">
+              <div class="edit-profile-form">
+<div class="row">
+
+
+
+
+
+  <p>
+    <b>We take privacy seriously.</b> This page allows you to see all of the data we keep on you.
+  </p>
+
+</div>
+              </div><!-- wd-60p -->
+            </div><!-- card -->
+
+            <hr class="invisible">
             <label class="content-left-label">Login Information</label>
             <div class="card bg-gray-200 bd-0">
               <div class="edit-profile-form">

@@ -28,11 +28,10 @@
        <li class="nav-item">
          <a href="#" class="nav-link with-sub">
            <i class="icon ion-person"></i>
-           <span>User Profile</span>
+           <span>User Information</span>
          </a>
          <ul class="nav-sub">
-                      <li class="nav-item"><a href="{{ url('platform/userprofile/view') }}" class="nav-link">View</a></li>
-                      <li class="nav-item"><a href="{{ url('platform/userprofile/edit') }}" class="nav-link">Edit</a></li>
+          <li class="nav-item"><a href="{{ url('platform/userprofile/edit') }}" class="nav-link">Edit</a></li>
          </ul>
       </li>
 
@@ -43,20 +42,11 @@
           <span>Billing</span>
         </a>
         <ul class="nav-sub">
-          <li class="nav-item"><a href="{{ url('platform/payment') }}" class="nav-link">Subscribe</a></li>
+          <li class="nav-item"><a href="{{ url('platform/payment') }}" class="nav-link">New Client</a></li>
           <li class="nav-item"><a href="{{ url('platform/billing/invoices') }}" class="nav-link">Invoices</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Payment Method</a></li>
         </ul>
      </li>
 
-
-     <!-- nav-item-->
-     <li class="nav-item">
-       <a href="{{ url('platform/bugreport') }}" class="nav-link {{ (\Request::route()->getName() == 'platform.pages.bugreport') ? 'active' : '' }}">
-         <i class="icon ion-bug"></i>
-         <span>Bug Report</span>
-       </a>
-     </li>
 
 
      </ul>

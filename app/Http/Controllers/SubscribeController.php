@@ -46,7 +46,7 @@ class SubscribeController extends Controller
     public function invoices()
     {
         $user = auth()->user();
-    
+
             try {
                 Stripe::setApiKey(env('STRIPE_SECRET'));
 

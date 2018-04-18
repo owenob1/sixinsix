@@ -32,4 +32,10 @@ Route::get('/platform/bugreport', array('as' => 'platform.pages.bugreport', func
     return view('platform.pages.bugreport');
 }))->middleware('auth');
 
+Route::get('/platform/terms', array('as' => 'platform.pages.terms', function () {
+    return view('platform.pages.terms');
+}))->middleware('auth');
+
 Auth::routes();
+
+Route::resource('terms', 'TermsController');
