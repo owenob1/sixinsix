@@ -15,17 +15,6 @@
 								<h3 class="font-secondary animated" data-animation="fadeIn" data-animation="fadeIn" data-animation-delay="600">Make <strong>Six Figures</strong> in <strong>Six Months</strong></h3> <br /><br />
 								<!-- semrush siteaudit widget -->
 								<div  class="animated" data-animation="fadeIn" data-animation="fadeIn" data-animation-delay="900">
-
-
-								<div id="ssa-widget"></div>
-								<script type="text/javascript" src="https://www.semrush.com/leadgen/static/js/widget.min.js"></script>
-
-								<script type="text/javascript">
-									new SEMRUSH.SiteauditWidget({
-										widgetApiKey: "5acd8da85f50e930233a4783"
-									});
-								</script>
-								<!-- /semrush siteaudit widget -->
 								</div>
 							</div>
 						</div>
