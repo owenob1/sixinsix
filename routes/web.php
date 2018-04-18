@@ -4,6 +4,10 @@ Route::get('/', function () {
     return view('frontend.index');
 });
 
+Route::get('/welcome', function () {
+    return view('frontend.onboard');
+});
+
 Route::get('/platform', array('as' => 'platform.pages.dashboard', function () {
     return view('platform.pages.dashboard');
 }))->middleware('auth');
