@@ -48,7 +48,7 @@
 						<li><a href="#who">Who is it for?</a></li>
 						<li><a href="#process1">The Process</a></li>
 						<li><a href="https://blog.sixinsix.co/">Blog</a></li>
-						<li><a href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-filled btn-primary btn-xs"><i class="i-before ti-layout-cta-center"></i>Book Consultation</button></a></li>
+						<li><a href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-filled btn-primary btn-xs"><i class="i-before ti-layout-cta-center calendar-alt"></i>Book Consultation</button></a></li>
 					</ul>
 				</div>
 			</nav>
@@ -62,7 +62,7 @@
 		<!-- Footer -->
 		<footer id="footer" class="dark bg-secondary pb-60">
 			<div class="container text-center"> <img src="../assets/img/sixinsixlogo.svg" style="width:20%; padding:20px;" alt="SixInSix">
-				<div class="text-muted"> Copyright SixInSix 2018 ©. All rights reserved. </div>
+				<div class="text-muted"> Copyright SixInSix Consulting Pty Ltd 2018 © ACN 625 805 370. All rights reserved. </div>
 				<ul class="nav nav-inline nav-sm mt-10">
 					<li><a href="#home" data-target="local-scroll">Back To Top</a></li>
 					<li><a href="mailto:hello@sixinsix.co">Contact Us</a></li>
