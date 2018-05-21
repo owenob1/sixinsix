@@ -48,7 +48,7 @@
 						<li><a href="#who">Who is it for?</a></li>
 						<li><a href="#process1">The Process</a></li>
 						<li><a href="https://blog.sixinsix.co/">Blog</a></li>
-						<li><a href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-filled btn-primary btn-xs"><i class="i-before ti-layout-cta-center calendar-alt"></i>Book Consultation</button></a></li>
+						<li><a href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-filled btn-primary btn-xs"><i class="i-before ti-layout-cta-center fa-calendar-alt"></i>Book Consultation</button></a></li>
 					</ul>
 				</div>
 			</nav>
@@ -58,7 +58,8 @@
 	</header>
 	<!-- Header / End -->
 
-	<body> @yield('content')
+	<body>
+		@yield('content')
 		<!-- Footer -->
 		<footer id="footer" class="dark bg-secondary pb-60">
 			<div class="container text-center"> <img src="../assets/img/sixinsixlogo.svg" style="width:20%; padding:20px;" alt="SixInSix">
@@ -89,24 +90,20 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-116008327-1');
 		</script>
-		<!-- Start of HubSpot Embed Code -->
-		<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4490170.js"></script>
-		<!-- End of HubSpot Embed Code -->
-		<!-- Drip -->
 		<script type="text/javascript">
-			var _dcq = _dcq || [];
-			var _dcs = _dcs || {};
-			_dcs.account = '6953107';
-			(function() {
-				var dc = document.createElement('script');
-				dc.type = 'text/javascript';
-				dc.async = true;
-				dc.src = '//tag.getdrip.com/6953107.js';
-				var s = document.getElementsByTagName('script')[0];
-				s.parentNode.insertBefore(dc, s);
-			})();
+		var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
+		{widgetcode:"162479406400d40037c41ddb0b42209644b72d7c26ca76361db2ee0c0494f591bb970538b5c1aa88c9e268b80446e0a0", values:{},ready:function(){}};
+		var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+		s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
 		</script>
-		<!-- end Drip -->
+
+		<script type="text/javascript">
+var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
+{widgetcode:"162479406400d40037c41ddb0b42209644b72d7c26ca76361db2ee0c0494f591bb970538b5c1aa88c9e268b80446e0a0", values:{},ready:function(){}};
+var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+</script>
+
 	</body>
 
 </html>
