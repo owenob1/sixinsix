@@ -28,7 +28,7 @@
 
 	<!-- Section -->
 	<section id="what" class="section-double right">
-		<div class="col-md-6 content" animated" data-animation="fadeIn" data-animation-delay="400"">
+		<div class="col-md-6 content" animated" data-animation="fadeIn" data-animation-delay="100"">
 			<h2>What is it?</h2>
 			<p class="lead"><strong>SixInSix</strong> is a growth hacking consulting plan designed to help founders create their first six figures in six months.</p>
 			<p class="lead"> Simply put, this plan is designed for anyone wanting to scale their online business rapidly over 6 months</strong>, whilst learning how to operate the system we help put in place. This program is about implementing online strategies and processes which will scale and automate the
@@ -36,7 +36,7 @@
 			<div data-target="local-scroll"><a href="#who" class="btn btn-default">Next<i class="i-after ti-arrow-down"></i></a></div>
 		</div>
 		<div class="col-md-6 image feature-4 bg-grey text-center">
-			<div class="bg-image animated" data-animation="fadeInRight" data-animation-delay="400"><img src="assets/img/process/what.svg" alt=""></div>
+			<div class="bg-image animated" data-animation="fadeInRight" data-animation-delay="100"><img src="assets/img/process/what.svg" alt=""></div>
 		</div>
 	</section>
 	<!-- Section -->
@@ -49,17 +49,17 @@
 			<div data-target="local-scroll"><a href="#start1" class="btn btn-default">Next<i class="i-after ti-arrow-down"></i></a></div>
 		</div>
 		<div class="col-md-6 image feature-4 bg-grey text-center">
-			<div class="bg-image animated" data-animation="fadeInLeft" data-animation-delay="400"><img src="assets/img/process/who.svg" alt=""></div>
+			<div class="bg-image animated" data-animation="fadeInLeft" data-animation-delay="100"><img src="assets/img/process/who.svg" alt=""></div>
 		</div>
 	</section>
 	<!-- Section -->
 	<section id="start1" class="dark bg-primary">
 		<div class="container text-center">
-			<h2 class="mb-60 animated" data-animation="fadeIn" data-animation-delay="400">What Are You Waiting For?</h2>
-			<h4 class=" animated" data-animation="fadeIn" data-animation-delay="400">We are so confident in our plan that we would love to meet with you for a <strong>free consultation</strong> to analyse your business. No obligation, just added value.</h4> <br /><br />
-			<a class=" animated" data-animation="fadeIn" data-animation-delay="400" href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-default btn-lg"><i class="i-before ti-user"></i>Book Consultation</button></a> </div>
+			<h2 class="mb-60 animated" data-animation="fadeIn" data-animation-delay="100">What Are You Waiting For?</h2>
+			<h4 class=" animated" data-animation="fadeIn" data-animation-delay="100">We are so confident in our plan that we would love to meet with you for a <strong>free consultation</strong> to analyse your business. No obligation, just added value.</h4> <br /><br />
+			<a class=" animated" data-animation="fadeIn" data-animation-delay="100" href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-default btn-lg"><i class="i-before ti-user"></i>Book Consultation</button></a> </div>
 		<br /><br /><br />
-		<div class="v-bottom text-center pb-30 animated" data-animation="fadeInDown" data-animation-delay="600" data-target="local-scroll"> <a href="#process1"><h5>Learn The Process</h5> <i class="i-after ti-arrow-down"></i></a> </div>
+		<div class="v-bottom text-center pb-30 animated" data-animation="fadeInDown" data-animation-delay="200" data-target="local-scroll"> <a href="#process1"><h5>Learn The Process</h5> <i class="i-after ti-arrow-down"></i></a> </div>
 	</section>
 	</div>
 	<!-- Content / End -->
@@ -72,7 +72,7 @@
 			<div data-target="local-scroll"><a href="#process2" class="btn btn-default">Next<i class="i-after ti-arrow-down"></i></a></div>
 		</div>
 		<div class="col-md-6 image feature-4 bg-grey text-center">
-			<div class="bg-image animated" data-animation="fadeInRight" data-animation-delay="400"><img src="../assets/img/process/analysis.svg" alt=""></div>
+			<div class="bg-image animated" data-animation="fadeInRight" data-animation-delay="100"><img src="../assets/img/process/analysis.svg" alt=""></div>
 		</div>
 	</section>
 	<!-- Section -->
@@ -85,7 +85,7 @@
 			<div data-target="local-scroll"><a href="#process3" class="btn btn-default">Next<i class="i-after ti-arrow-down"></i></a></div>
 		</div>
 		<div class="col-md-6 image feature-4 bg-grey text-center">
-			<div class="bg-image animated" data-animation="fadeInLeft" data-animation-delay="400"><img src="../assets/img/process/traffic.svg" alt=""></div>
+			<div class="bg-image animated" data-animation="fadeInLeft" data-animation-delay="100"><img src="../assets/img/process/traffic.svg" alt=""></div>
 		</div>
 	</section>
 	</div>
@@ -100,7 +100,7 @@
 			<div data-target="local-scroll"><a href="#process4" class="btn btn-default">Next<i class="i-after ti-arrow-down"></i></a></div>
 		</div>
 		<div class="col-md-6 image feature-4 bg-grey text-center">
-			<div class="bg-image animated" data-animation="fadeInRight" data-animation-delay="400"><img src="assets/img/process/scale.svg" alt=""></div>
+			<div class="bg-image animated" data-animation="fadeInRight" data-animation-delay="100"><img src="assets/img/process/scale.svg" alt=""></div>
 		</div>
 	</section>
 	<!-- Section -->
@@ -112,7 +112,7 @@
 			<div data-target="local-scroll"><a href="#process5" class="btn btn-default">Next<i class="i-after ti-arrow-down"></i></a></div>
 		</div>
 		<div class="col-md-6 image feature-4 bg-grey text-center">
-			<div class="bg-image animated" data-animation="fadeInLeft" data-animation-delay="400"><img src="assets/img/process/convert.svg" alt=""></div>
+			<div class="bg-image animated" data-animation="fadeInLeft" data-animation-delay="100"><img src="assets/img/process/convert.svg" alt=""></div>
 		</div>
 	</section>
 	</div>
@@ -135,9 +135,9 @@
 	<!-- Section -->
 	<section id="start2" class="dark bg-primary">
 		<div class="container text-center">
-			<h2 class="mb-60">So what are you waiting for?</h2>
-			<h4><strong>No, really. We want to know.</strong> Come meet with us for a 60 minute free consultation and let’s have a strategy session.</h4> <br /><br />
-			<!-- Calendly link widget begin --><a href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-default btn-lg"><i class="i-before ti-user"></i>Book Consultation</button></a> </div>
+			<h2 class="mb-60  animated" data-animation="fadeIn" data-animation-delay="100">So what are you waiting for?</h2>
+			<h4 class=" animated" data-animation="fadeIn" data-animation-delay="100"><strong>No, really. We want to know.</strong> Come meet with us for a 60 minute free consultation and let’s have a strategy session.</h4> <br /><br />
+			<!-- Calendly link widget begin --><a href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-default btn-lg animated" data-animation="fadeIn" data-animation-delay="100"><i class="i-before ti-user"></i>Book Consultation</button></a> </div>
 	</section>
 	</div>
 
