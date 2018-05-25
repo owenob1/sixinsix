@@ -11,15 +11,15 @@
 					<div class="row">
 						<div class="col-lg-8 col-lg-push-2">
 							<div class="text-center">
-								<p> <img class="logo logo-dark animated" data-animation="fadeIn" data-animation-delay="300" src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix"> <br />
-								<h3 class="font-secondary animated" data-animation="fadeIn" data-animation="fadeIn" data-animation-delay="600">Make <strong>Six Figures</strong> in <strong>Six Months</strong></h3> <br /><br /></p>
+								<p> <img class="logo logo-dark animated" data-animation="fadeIn"  src="../assets/img/sixinsixlogo.svg" style="width:70%;" alt="SixInSix"> <br />
+								<h3 class="font-secondary animated" data-animation="fadeIn" data-animation="fadeIn" data-animation-delay="100">Make <strong>Six Figures</strong> in <strong>Six Months</strong></h3> <br /><br /></p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-			<div class="v-bottom text-center pb-30 animated" data-animation="fadeInUp" data-animation-delay="1200" data-target="local-scroll"> <a href="#what" class="btn btn-default" style="color:white;">What is it? <i class="i-after ti-arrow-down"></i></a> </div>
+			<div class="v-bottom text-center pb-30 animated" data-animation="fadeInUp" data-animation-delay="200" data-target="local-scroll"> <a href="#what" class="btn btn-default btn-lg" >What is it? <i class="i-after ti-arrow-down"></i></a> </div>
 	</div>
 	</div>
 	</div>
@@ -57,7 +57,7 @@
 		<div class="container text-center">
 			<h2 class="mb-60 animated" data-animation="fadeIn" data-animation-delay="400">What Are You Waiting For?</h2>
 			<h4 class=" animated" data-animation="fadeIn" data-animation-delay="400">We are so confident in our plan that we would love to meet with you for a <strong>free consultation</strong> to analyse your business. No obligation, just added value.</h4> <br /><br />
-			<a class=" animated" data-animation="fadeIn" data-animation-delay="400" href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-default btn-lg"><i class="i-before ti-layout-cta-center"></i>Book Consultation</button></a> </div>
+			<a class=" animated" data-animation="fadeIn" data-animation-delay="400" href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-default btn-lg"><i class="i-before ti-user"></i>Book Consultation</button></a> </div>
 		<br /><br /><br />
 		<div class="v-bottom text-center pb-30 animated" data-animation="fadeInDown" data-animation-delay="600" data-target="local-scroll"> <a href="#process1"><h5>Learn The Process</h5> <i class="i-after ti-arrow-down"></i></a> </div>
 	</section>
@@ -129,7 +129,7 @@
 			<div data-target="local-scroll"><a href="#start2" class="btn btn-default">Get Started<i class="i-after ti-arrow-down"></i></a></div>
 		</div>
 		<div class="col-md-6 image feature-4 bg-grey text-center">
-			<div class="bg-image animated" data-animation="fadeInRight" data-animation-delay="400"><img src="assets/img/process/rank.svg" alt=""></div>
+			<div class="bg-image animated" data-animation="fadeInRight" data-animation-delay="100"><img src="assets/img/process/rank.svg" alt=""></div>
 		</div>
 	</section>
 	<!-- Section -->
@@ -137,7 +137,7 @@
 		<div class="container text-center">
 			<h2 class="mb-60">So what are you waiting for?</h2>
 			<h4><strong>No, really. We want to know.</strong> Come meet with us for a 60 minute free consultation and let’s have a strategy session.</h4> <br /><br />
-			<!-- Calendly link widget begin --><a href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-default btn-lg"><i class="i-before ti-layout-cta-center"></i>Book Consultation</button></a> </div>
+			<!-- Calendly link widget begin --><a href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-default btn-lg"><i class="i-before ti-user"></i>Book Consultation</button></a> </div>
 	</section>
 	</div>
 

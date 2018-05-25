@@ -31,7 +31,7 @@
 	<div id="page-loader"><svg class="loader-1 loader-primary" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="circle" fill="none" stroke-width="3" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div>
 	<!-- Loader / End -->
 	<!-- Header -->
-	<header id="header" class="absolute">
+	<header id="header" class="absolute fullwidth transparent">
 		<!-- Navigation Bar -->
 		<div id="nav-bar">
 			<!-- Menu Toggle -->
@@ -48,7 +48,7 @@
 						<li><a href="#who">Who is it for?</a></li>
 						<li><a href="#process1">The Process</a></li>
 						<li><a href="https://blog.sixinsix.co/">Blog</a></li>
-						<li><a href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-filled btn-primary btn-xs"><i class="i-before ti-layout-cta-center fa-calendar-alt"></i>Book Consultation</button></a></li>
+						<li><a href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-filled btn-primary btn-xs"><i class="i-before ti-user"></i>Book Consultation</button></a></li>
 					</ul>
 				</div>
 			</nav>
