@@ -63,9 +63,10 @@
 		<!-- Footer -->
 		<footer id="footer" class="dark bg-secondary pb-60">
 			<div class="container text-center"> <img src="../assets/img/sixinsixlogo.svg" style="width:20%; padding:20px;" alt="SixInSix">
-				<div class="text-muted"> Copyright SixInSix Consulting Pty Ltd 2018 © ACN 625 805 370. All rights reserved. <a href="https://www.sixinsix.co/docs/SixInSix_Privacy_Policy.pdf">Privacy Policy</a>.</div>
+				<div class="text-muted"> Copyright SixInSix Consulting Pty Ltd 2018 © ACN 625 805 370. All rights reserved.</div>
 				<ul class="nav nav-inline nav-sm mt-10">
 					<li><a href="#home" data-target="local-scroll">Back To Top</a></li>
+					<li><a href="https://www.sixinsix.co/docs/SixInSix_Privacy_Policy.pdf">Privacy Policy</a></li>
 					<li><a href="mailto:hello@sixinsix.co">Contact Us</a></li>
 				</ul>
 			</div>
