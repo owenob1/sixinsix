@@ -7,6 +7,9 @@ Route::get('/', function () {
 Route::get('/welcome', function () {
     return view('frontend.onboard');
 });
+Route::get('/test', function() {
+   return view('development.partials.main');
+});
 
 Route::get('/platform', array('as' => 'platform.pages.dashboard', function () {
     return view('platform.pages.dashboard');
@@ -19,6 +22,8 @@ Route::get('/platform/userprofile/view', array('as' => 'platform.pages.userprofi
 Route::get('/platform/userprofile/edit', array('as' => 'platform.pages.userprofile.edit', function () {
     return view('platform.pages.userprofile.edit');
 }))->middleware('auth');
+
+
 
 //PAYMENT//
 
