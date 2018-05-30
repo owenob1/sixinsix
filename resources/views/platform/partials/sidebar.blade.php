@@ -26,12 +26,12 @@
 
        <!-- nav-item -->
        <li class="nav-item">
-         <a href="#" class="nav-link with-sub">
+         <a href="#" class="nav-link with-sub @if((\Request::route()->getName() == 'platform.edit.profile')) active @endif">
            <i class="icon ion-person"></i>
            <span>User Information</span>
          </a>
          <ul class="nav-sub">
-          <li class="nav-item"><a href="{{ url('platform/userprofile/edit') }}" class="nav-link">Edit</a></li>
+          <li class="nav-item"><a href="{{ route('platform.edit.profile') }}" class="nav-link @if((\Request::route()->getName() == 'platform.edit.profile')) active @endif">Edit Profile</a></li>
          </ul>
       </li>
 

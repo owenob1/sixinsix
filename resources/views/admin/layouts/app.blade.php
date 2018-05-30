@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -45,46 +45,47 @@
     <!-- Katniss CSS -->
     <link rel="stylesheet" href="{{ asset('platform_assets/css/katniss.css') }}">
     <link rel="stylesheet" href="{{ asset('platform_assets/css/custom.css') }}" >
-  </head>
+    @yield('custom-css')
+</head>
 
 <body>
 
-    {{-- SIDEBAR --}}
-    <div id="sidebar">
-            @include('platform.partials.sidebar')
+{{-- SIDEBAR --}}
+<div id="sidebar">
+    @include('admin.partials.sidebar')
 
-    </div>
+</div>
 
-    {{-- HEADER --}}
-    <div id="header">
-        @include('platform.partials.header')
+{{-- HEADER --}}
+<div id="header">
+    @include('platform.partials.header')
 
-    </div>
-
-
+</div>
 
 
-    {{-- MAIN --}}
-    <main class="kt-mainpanel">
-        @yield('content')
-    </main>
 
-    {{-- FOOTER --}}
-    <div id="site-footer">
-        @include('platform.partials.footer')
-    </div>
 
-    {{-- JS --}}
-        {{--<script src="{{ asset('js/app.js') }}"></script>--}}
-        <script src="{{ asset('platform_assets/lib/jquery/jquery.js') }}"></script>
-        <script src="{{ asset('platform_assets/lib/popper.js/popper.js') }}"></script>
-        <script src="{{ asset('platform_assets/lib/bootstrap/bootstrap.js') }}"></script>
-        <script src="{{ asset('platform_assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js') }}"></script>
-        <script src="{{ asset('platform_assets/lib/moment/moment.js') }}"></script>
-        <script src="{{ asset('platform_assets/lib/highlightjs/highlight.pack.js') }}"></script>
-        <script src="{{ asset('platform_assets/js/katniss.js') }}"></script>
-        <script src='https://js.stripe.com/v2/' type='text/javascript'></script>
-        <script src="{{asset('platform_assets/js/stripe.js')}}"></script>
-        @yield('custom-js')
+{{-- MAIN --}}
+<main class="kt-mainpanel">
+    @yield('content')
+</main>
+
+{{-- FOOTER --}}
+<div id="site-footer">
+    @include('platform.partials.footer')
+</div>
+
+{{-- JS --}}
+{{--<script src="{{ asset('js/app.js') }}"></script>--}}
+<script src="{{ asset('platform_assets/lib/jquery/jquery.js') }}"></script>
+<script src="{{ asset('platform_assets/lib/popper.js/popper.js') }}"></script>
+<script src="{{ asset('platform_assets/lib/bootstrap/bootstrap.js') }}"></script>
+<script src="{{ asset('platform_assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js') }}"></script>
+<script src="{{ asset('platform_assets/lib/moment/moment.js') }}"></script>
+<script src="{{ asset('platform_assets/lib/highlightjs/highlight.pack.js') }}"></script>
+<script src="{{ asset('platform_assets/js/katniss.js') }}"></script>
+<script src='https://js.stripe.com/v2/' type='text/javascript'></script>
+<script src="{{asset('platform_assets/js/stripe.js')}}"></script>
+@yield('custom-js')
 </body>
 </html>

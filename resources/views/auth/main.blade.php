@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -40,40 +40,19 @@
 
     <!-- Katniss CSS -->
     <link rel="stylesheet" href="../platform_assets/css/katniss.css">
-  </head>
+</head>
 
 <body>
-
-    {{-- SIDEBAR --}}
-    <div id="sidebar">
-        @include('platform.partials.sidebar')
-    </div>
-
-    {{-- HEADER --}}
-    <div id="header">
-        @include('platform.partials.header')
-    </div>
-
-
-    {{-- MAIN --}}
-    <main class="kt-mainpanel">
-        @yield('content')
-    </main>
-
-    {{-- FOOTER --}}
-    <div id="site-footer">
-        @include('platform.partials.footer')
-    </div>
+    @yield('content')
 
     {{-- JS --}}
-        <script src="../platform_assets/lib/jquery/jquery.js"></script>
-        <script src="../platform_assets/lib/popper.js/popper.js"></script>
-        <script src="../platform_assets/lib/bootstrap/bootstrap.js"></script>
-        <script src="../platform_assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
-        <script src="../platform_assets/lib/moment/moment.js"></script>
-        <script src="../platform_assets/lib/highlightjs/highlight.pack.js"></script>
-        <script src="../platform_assets/js/katniss.js"></script>
-        @yield('custom-js')
 
+    <script src="../platform_assets/lib/jquery/jquery.js"></script>
+    <script src="../platform_assets/lib/popper.js/popper.js"></script>
+    <script src="../platform_assets/lib/bootstrap/bootstrap.js"></script>
+    <script src="../platform_assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <script src="../platform_assets/lib/moment/moment.js"></script>
+    <script src="../platform_assets/lib/highlightjs/highlight.pack.js"></script>
+    <script src="../platform_assets/js/katniss.js"></script>
 </body>
 </html>

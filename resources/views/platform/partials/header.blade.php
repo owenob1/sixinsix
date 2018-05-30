@@ -67,23 +67,28 @@
     @auth
     <div class="dropdown dropdown-profile">
       <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
-        <img src="{{ Auth::user()->profile_pic }}" class="wd-32 rounded-circle" alt="">
-        <span class="logged-name"><span class="hidden-xs-down">{{ Auth::user()->name }}</span> <i class="fa fa-angle-down mg-l-3"></i></span>
+        <img  @if(Auth::user()->profile->avatar == '') src="{{ asset('platform_assets/img/img3.jpg') }}"  @else src="{{ Auth::user()->profile->avatar }}" @endif class="wd-32 rounded-circle" alt="">
+        <span class="logged-name"><span class="hidden-xs-down">{{ Auth::user()->email }}</span> <i class="fa fa-angle-down mg-l-3"></i></span>
       </a>
       <div class="dropdown-menu wd-200">
         <ul class="list-unstyled user-profile-nav">
-          <li><a href=""><i class="icon ion-ios-person-outline"></i> Edit Profile</a></li>
+          @if(Auth::user()->isRole('admin'))
+            <li><a href="{{ route('admin.dashboard') }}"><i class="icon ion-home"></i> Admin</a></li>
+          @endif
+          <li><a href="{{ route('platform.edit.profile') }}"><i class="icon ion-ios-person-outline"></i> Edit Profile</a></li>
+
+
           <li><a href=""><i class="icon ion-ios-gear-outline"></i> Settings</a></li>
           <li><a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="icon ion-power"></i> {{ __('Logout') }}</a></li>
           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-              @csrf
+            @csrf
           </form>
 
           </a>
         </ul>
       </div><!-- dropdown-menu -->
     </div><!-- dropdown -->
-  @endauth
+    @endauth
   </div><!-- kt-headpanel-right -->
 </div><!-- kt-headpanel -->
 <div class="kt-breadcrumb">

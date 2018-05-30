@@ -31,7 +31,7 @@
            <span>User Information</span>
          </a>
          <ul class="nav-sub">
-          <li class="nav-item"><a href="{{ url('platform/userprofile/edit') }}" class="nav-link">Edit</a></li>
+          <li class="nav-item"><a href="{{ route('platform.edit.profile') }}" class="nav-link">Edit</a></li>
          </ul>
       </li>
 
