@@ -64,7 +64,7 @@ class ProfileController extends Controller
         $fileSize = $request->file('file')->getSize();
         $relativePath = '/uploads/avatars';
         $directory    = public_path() . $relativePath;
-        $uploadFileName = time();
+        $uploadFileName = time().'.'.$request->file('file')->getClientOriginalExtension();
         $request->file('file')->move($directory, $uploadFileName);
         $profile = \Auth::user()->profile;
         $profile->avatar = $relativePath.'/'.$uploadFileName;
