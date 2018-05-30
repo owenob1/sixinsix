@@ -52,20 +52,32 @@ class LoginController extends Controller
             return redirect()->route('login')->with('error_confirmation', $message);
         }
     }
-    protected  function authenticated(Request $request, $user)
+
+    public function login(Request $request)
     {
-        if ($user->confirmed == 0) {
-            \Auth::logout();
-            return back()->with('error_email_verify', 'Please verify your email address. Also check your spam box.');
-        }else {
-            if($user->isRole('admin')) {
-                return redirect()->to('/test');
-            }else {
-                return redirect(route('platform.pages.dashboard'));
+        $remember_me = $request->has('remember_me') ? true : false;
+
+        if(\Auth::attempt(['email' => $request->get('email'), 'password' => $request->get('password')], $remember_me))
+        {
+            if (\Auth::viaRemember()) {
+                echo "sdfsdf";
+                exit;
             }
+            $user = \Auth::user();
 
-
-
+            if ($user->confirmed == 0) {
+                \Auth::logout();
+                return back()->with('error_email_verify', 'Please verify your email address. Also check your spam box.');
+            }else {
+                if($user->isRole('admin')) {
+                    return redirect(route('admin.dashboard'));
+                }else {
+                    return redirect(route('platform.pages.dashboard'));
+                }
+            }
         }
+
+        return back()->withInput()->with('error_email_verify', 'Login Failed');
     }
+
 }

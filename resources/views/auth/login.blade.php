@@ -37,6 +37,12 @@
                     {{--<div class="form-group">--}}
                         {{--<a href="">Forgot password?</a>--}}
                     {{--</div><!-- form-group -->--}}
+                    <div class="form-group">
+                        <label class="ckbox">
+                            <input type="checkbox" name="remember_me" value="1" />
+                                <span>Remember me</span>
+                        </label>
+                    </div>
                     <button type="submit" class="btn btn-dark btn-block">Sign In</button>
                 </form>
                 <div class="tx-center bd pd-10 mg-t-40">Not yet a member? <a href="{{ route('register') }}">Create an account</a></div>
