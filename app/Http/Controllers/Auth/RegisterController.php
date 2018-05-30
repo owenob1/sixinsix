@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Mail\userCreated;
 use App\User;
+use App\UserProfile;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Auth\Events\Registered;
+Use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
@@ -49,9 +53,11 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
+            'first_name' =>'required',
+            'last_name' =>'required',
+            'website' =>'required'
         ]);
     }
 
@@ -63,10 +69,41 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
+        $confirmation_code = $this->quickRandom(32).time();
+         $user = User::create([
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'confirmed' => 0,
+            'confirmation_code' =>$confirmation_code
         ]);
+         return $user;
+    }
+
+    public function register(Request $request){
+        $this->validator($request->all())->validate();
+        event(new Registered($user = $this->create($request->all())));
+        $data = $request->all();
+        $profile = UserProfile::create([
+                        'first_name' =>$data['first_name'],
+                        'last_name' =>$data['last_name'],
+                        'website' =>$data['website'],
+                        'user_id' =>$user->id,
+                    ]);
+        $roleUser = new RoleUser();
+        $roleUser->role_id = 1;
+        $roleUser->user_id = $user->id;
+        $roleUser->save();
+
+        $url = route('confirmGuest', [$user->confirmation_code, $user->id ]);
+        \Mail::to($user->email)->send(new userCreated($url, $user, $profile));
+        $this->guard()->logout($user);
+        return redirect()->route('login')->with('message', 'Your account has been created successfully. Please verify your email address');
+    }
+
+    public static function quickRandom($length = 16)
+    {
+        $pool = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+        return substr(str_shuffle(str_repeat($pool, 5)), 0, $length);
     }
 }
