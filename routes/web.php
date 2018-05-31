@@ -68,14 +68,14 @@ Route::group(['middleware' => ['auth']], function () {
 
 
 
-    Route::get('/platform/bugreport', array('as' => 'platform.pages.bugreport', function () {
-        return view('platform.pages.bugreport');
-    }))->middleware('auth');
-
-    Route::get('/platform/terms', array('as' => 'platform.pages.terms', function () {
-        return view('platform.pages.terms');
-    }))->middleware('auth');
 });
+
+Route::get('/about', 'AboutController@index')->name('about-us');
+Route::get('/blog', 'BlogController@index')->name('blog');
+Route::get('/contact', 'ContactController@index')->name('contact-us');
+Route::get('/faq', 'FaqController@index')->name('faqs');
+Route::get('/portfolios', 'PortfolioController@index')->name('portfolios');
+Route::get('/services', 'ServiceController@index')->name('services');
 
 
 

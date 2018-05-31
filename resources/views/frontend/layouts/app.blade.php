@@ -43,11 +43,10 @@
 				<!-- Primary Menu -->
 				<div class="module menu left">
 					<ul id="nav-primary" class="nav nav-primary">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#what">What is it?</a></li>
-						<li><a href="#who">Who is it for?</a></li>
-						<li><a href="#process1">The Process</a></li>
-						<li><a href="https://blog.sixinsix.co/">Blog</a></li>
+						<li><a href="../">Home</a></li>
+						<li><a href="../about">About Us</a></li>
+						<li><a href="../services">Services</a></li>
+						<li><a href="../blog">Blog</a></li>
 						<li><a href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-filled btn-primary btn-xs"><i class="i-before ti-user"></i>Book Consultation</button></a></li>
 					</ul>
 				</div>
@@ -67,7 +66,7 @@
 				<ul class="nav nav-inline nav-sm mt-10">
 					<li><a href="#home" data-target="local-scroll">Back To Top</a></li>
 					<li><a href="https://www.sixinsix.co/docs/SixInSix_Privacy_Policy.pdf">Privacy Policy</a></li>
-					<li><a href="mailto:hello@sixinsix.co">Contact Us</a></li>
+					<li><a href="../contact">Contact Us</a></li>
 				</ul>
 			</div>
 		</footer>
