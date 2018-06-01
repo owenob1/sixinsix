@@ -17,7 +17,7 @@ class DashboardController extends Controller
         return view('admin.pages.dashboard');
     }
     public function users(){
-        $users = User::whereRaw(true)->paginate(10);
+        $users = User::all();
         return view('admin.pages.users')->with(['users' => $users]);
     }
 }

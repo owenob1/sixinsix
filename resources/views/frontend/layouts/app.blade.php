@@ -22,16 +22,20 @@
 	<!-- CSS Styles -->
 	<link rel="stylesheet" href="../assets/css/styles.css" />
 	<!-- CSS Base -->
+	@if((\Request::route()->getName() == 'blogItem'))
+		<link id="theme" rel="stylesheet" href="../assets/css/themes/theme-classic.css" />
+	@else
 	<link id="theme" rel="stylesheet" href="../assets/css/themes/theme-fire.css" />
+	@endif
 	<!--Popup-->
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"> </head>
-
+	@yield('custom-css')
 <body class="one-page header-absolute">
 	<!-- Loader -->
 	<div id="page-loader"><svg class="loader-1 loader-primary" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="circle" fill="none" stroke-width="3" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div>
 	<!-- Loader / End -->
 	<!-- Header -->
-	<header id="header" class="absolute fullwidth transparent">
+	<header id="header" class=" fullwidth @if((\Request::route()->getName() == 'blogItem')) light @else  absolute transparent @endif">
 		<!-- Navigation Bar -->
 		<div id="nav-bar">
 			<!-- Menu Toggle -->

@@ -16,8 +16,12 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin']], function 
         return redirect()->route('admin.dashboard');
     });
 
-    Route::get('/',      ['as' =>'admin.dashboard', 'uses'  =>'Admin\DashboardController@index']);
-    Route::get('/users', ['as' =>'admin.users',     'uses'  =>'Admin\DashboardController@users']);
+    Route::get('/',                 ['as' =>'admin.dashboard',          'uses'  =>'Admin\DashboardController@index']);
+    Route::get('/users',            ['as' =>'admin.users',              'uses'  =>'Admin\DashboardController@users']);
+    Route::get('/blog',             ['as' =>'admin.blog',               'uses'  =>'Admin\BlogController@index']);
+    Route::get('/blog/create',      ['as' =>'admin.blog.create',        'uses'  =>'Admin\BlogController@create']);
+    Route::post('/blog/create',     ['as' =>'admin.blog.postCreate',    'uses'  =>'Admin\BlogController@postCreate']);
+    Route::get('/blog/edit/{id}',   ['as' =>'admin.blog.edit',          'uses'  =>'Admin\BlogController@edit']);
 });
 
 
@@ -72,6 +76,7 @@ Route::group(['middleware' => ['auth']], function () {
 
 Route::get('/about', 'AboutController@index')->name('about-us');
 Route::get('/blog', 'BlogController@index')->name('blog');
+Route::get('blog/{slug}','BlogController@item')->name('blogItem');
 Route::get('/contact', 'ContactController@index')->name('contact-us');
 Route::get('/faq', 'FaqController@index')->name('faqs');
 Route::get('/portfolios', 'PortfolioController@index')->name('portfolios');

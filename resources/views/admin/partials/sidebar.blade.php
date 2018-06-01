@@ -1,4 +1,4 @@
-<!-- ##### SIDEBAR LOGO ##### -->
+k<!-- ##### SIDEBAR LOGO ##### -->
 <div class="kt-sideleft-header">
     <div class="kt-logo"><a href="#">SixInSix</a></div>
     <div id="ktDate" class="kt-date-today"></div>
@@ -36,7 +36,21 @@
                 </li>
             </ul>
         </li>
-
+        <!-- nav-item -->
+        <li class="nav-item">
+            <a href="#" class="nav-link with-sub @if((\Request::route()->getName() == 'admin.blog') || (\Request::route()->getName() == 'admin.blog.create')) active @endif">
+                <i class="icon ion-ios-gear-outline"></i>
+                <span>Blog Management</span>
+            </a>
+            <ul class="nav-sub" >
+                <li class="nav-item">
+                    <a href="{{ route('admin.blog') }}" class="nav-link {{ (\Request::route()->getName() == 'admin.blog') ? 'active' : '' }}">All Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('admin.blog.create') }}" class="nav-link {{ (\Request::route()->getName() == 'admin.blog.create') ? 'active' : '' }}">Add Blog</a>
+                </li>
+            </ul>
+        </li>
 
 
 
