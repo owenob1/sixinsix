@@ -22,13 +22,19 @@
 	<!-- CSS Styles -->
 	<link rel="stylesheet" href="../assets/css/styles.css" />
 	<!-- CSS Base -->
-	@if((\Request::route()->getName() == 'blogItem'))
-		<link id="theme" rel="stylesheet" href="../assets/css/themes/theme-classic.css" />
-	@else
 	<link id="theme" rel="stylesheet" href="../assets/css/themes/theme-fire.css" />
-	@endif
 	<!--Popup-->
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"> </head>
+	<style>
+		.one-page, #modalCookies {
+			padding-right: 0px!important;
+		}
+		@media only screen and (max-width: 991px){
+			#nav-primary > li> a{
+				color : #434343;
+			}
+		}
+	</style>
 	@yield('custom-css')
 <body class="one-page header-absolute">
 	<!-- Loader -->
@@ -61,7 +67,6 @@
 	</header>
 	<!-- Header / End -->
 
-	<body>
 		@yield('content')
 		<!-- Footer -->
 		<footer id="footer" class="dark bg-secondary pb-60">
@@ -95,18 +100,18 @@
 			gtag('config', 'UA-116008327-1');
 		</script>
 		<script type="text/javascript">
-		var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
-		{widgetcode:"162479406400d40037c41ddb0b42209644b72d7c26ca76361db2ee0c0494f591bb970538b5c1aa88c9e268b80446e0a0", values:{},ready:function(){}};
-		var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
-		s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+			var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
+			{widgetcode:"162479406400d40037c41ddb0b42209644b72d7c26ca76361db2ee0c0494f591bb970538b5c1aa88c9e268b80446e0a0", values:{},ready:function(){}};
+			var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+			s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
 		</script>
 
 		<script type="text/javascript">
-var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
-{widgetcode:"162479406400d40037c41ddb0b42209644b72d7c26ca76361db2ee0c0494f591bb970538b5c1aa88c9e268b80446e0a0", values:{},ready:function(){}};
-var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
-s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
-</script>
+			var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
+			{widgetcode:"162479406400d40037c41ddb0b42209644b72d7c26ca76361db2ee0c0494f591bb970538b5c1aa88c9e268b80446e0a0", values:{},ready:function(){}};
+			var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+			s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+		</script>
 
 	</body>
 

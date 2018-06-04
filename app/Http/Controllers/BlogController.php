@@ -11,8 +11,9 @@ class BlogController extends Controller
     return view('frontend.blog')->with(['blog' => $blog]);
   }
   public function item($slug) {
-//      $blog =Blog::where('title', $slug)->first();
-      $blog = Blog::findOrFail($slug);
+      $slug = str_replace("-"," ", $slug);
+      $blog =Blog::where('title', $slug)->first();
+//      $blog = Blog::findOrFail($slug);
       return view('frontend.blogItem')->with(['blog' => $blog]);
   }
 }

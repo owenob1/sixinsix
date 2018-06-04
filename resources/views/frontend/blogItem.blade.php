@@ -4,10 +4,10 @@
     <div id="page-title" class="page-title page-title-1 bg-grey">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h1>Blog Post</h1>
+                <div class="col-md-8">
+                    <h1>{{$blog->title}}</h1>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <ol class="breadcrumb">
                         <li><a href="/">Home Page</a></li>
                         <li class="active">Blog Post</li>

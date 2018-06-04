@@ -87,7 +87,7 @@
 										<div class="post-content">
 											<h2>{{$value->title}}</h2>
 											<div class="ellipsis">{!! $value->description !!}</div>
-											<a href="{{route('blogItem', $value->id)}}" class="btn btn-filled btn-sm btn-primary">Read more</a>
+											<a href="{{route('blogItem', str_replace(" ","-", $value->title))}}" class="btn btn-filled btn-sm btn-primary">Read more</a>
 										</div>
 									</div>
 								</div>

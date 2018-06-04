@@ -64,12 +64,34 @@ class ProfileController extends Controller
         $fileSize = $request->file('file')->getSize();
         $relativePath = '/uploads/avatars';
         $directory    = public_path() . $relativePath;
-        $uploadFileName = time().'.'.$request->file('file')->getClientOriginalExtension();
+        if($request->file('file')->getClientOriginalExtension() == '') {
+            $uploadFileName = time().'.png';
+        }else{
+            $uploadFileName = time().'.'.$request->file('file')->getClientOriginalExtension();
+        }
         $request->file('file')->move($directory, $uploadFileName);
         $profile = \Auth::user()->profile;
+        if($profile->avatar != '') {
+            \File::delete(public_path($profile->avatar));
+        }
         $profile->avatar = $relativePath.'/'.$uploadFileName;
         $profile->save();
+        $urlpath = asset($profile->avatar);
+        $data = getimagesize($urlpath);
+        if($data[0] <=400 && $data[1] <= 400){
+            $avatar_crop = 0;
+        }else {
+            $avatar_crop = 1;
+        }
+        return response()->json([
+            'result' => 'success',
+            'url' =>$urlpath,
+            'avatar_crop' => $avatar_crop
+        ]);
+    }
 
-        return redirect()->route('platform.edit.profile');
+    public function avatar_crop() {
+        $profile = \Auth::user()->profile;
+        return view('platform.pages.userprofile.avatarCrop')->with('profile', $profile);
     }
 }

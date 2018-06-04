@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Blog;
+use Image;
 
 class BlogController extends Controller
 {
@@ -30,12 +31,14 @@ class BlogController extends Controller
                     'tag' => 'required|string',
                     'file'   => 'required | mimes:jpeg,jpg,png'
                 ]);
-                $filename = $request->file('file')->getClientOriginalName();
-                $fileSize = $request->file('file')->getSize();
+                $image = $request->file('file');
                 $relativePath = '/uploads/blog';
                 $directory    = public_path() . $relativePath;
                 $uploadFileName = time().'.'.$request->file('file')->getClientOriginalExtension();
-                $request->file('file')->move($directory, $uploadFileName);
+                $img = Image::make($image->getRealPath());
+                $img->resize(870, 515, function ($constraint) {
+                    $constraint->aspectRatio();
+                })->save($directory.'/'. $uploadFileName);
                 $filePath = $relativePath.'/'.$uploadFileName;
             }else{
                 $request->validate([
@@ -48,6 +51,7 @@ class BlogController extends Controller
             $blog->tag = $request->get('tag');
             $blog->description = $request->get('description_content');
             if($request->hasFile('file')){
+                \File::delete(public_path($blog->image));
                 $blog->image = $filePath;
             }
             $blog->save();
@@ -60,12 +64,21 @@ class BlogController extends Controller
                 'tag' => 'required|string',
                 'file'   => 'required | mimes:jpeg,jpg,png'
             ]);
-            $filename = $request->file('file')->getClientOriginalName();
-            $fileSize = $request->file('file')->getSize();
+//            $filename = $request->file('file')->getClientOriginalName();
+//            $fileSize = $request->file('file')->getSize();
+//            $relativePath = '/uploads/blog';
+//            $directory    = public_path() . $relativePath;
+//            $uploadFileName = time().'.'.$request->file('file')->getClientOriginalExtension();
+//            $request->file('file')->move($directory, $uploadFileName);
+
+            $image = $request->file('file');
             $relativePath = '/uploads/blog';
             $directory    = public_path() . $relativePath;
             $uploadFileName = time().'.'.$request->file('file')->getClientOriginalExtension();
-            $request->file('file')->move($directory, $uploadFileName);
+            $img = Image::make($image->getRealPath());
+            $img->resize(870, 515, function ($constraint) {
+                $constraint->aspectRatio();
+            })->save($directory.'/'. $uploadFileName);
 
             Blog::create([
                 'title' =>$request->get('title'),

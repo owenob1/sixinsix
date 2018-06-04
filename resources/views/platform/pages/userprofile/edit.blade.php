@@ -1,7 +1,21 @@
 @extends('platform.layouts.app')
 
 @section('title', 'Edit Profile')
+@section('custom-css')
+    {{--<link href="{{ asset('crop/cropper.css') }}" rel="stylesheet">--}}
+    {{--<link href=" {{ asset('crop/main.css') }}" rel="stylesheet">--}}
+    {{--<style>--}}
+        {{--.img-container {--}}
+            {{--/* Never limit the container height here */--}}
+            {{--max-width: 100%;--}}
+        {{--}--}}
 
+        {{--.img-container img {--}}
+            {{--/* This is important */--}}
+            {{--width: 100%;--}}
+        {{--}--}}
+    {{--</style>--}}
+@endsection
 @section('content')
 
     <!-- ##### MAIN PANEL ##### -->
@@ -32,7 +46,7 @@
         </div>
         <div class="row">
             <div class="col-md-4 col-lg-3 mg-t-30 mg-md-t-0">
-                <form class="md-form" action="{{ route('platform.edit.profile.avatar') }}" method="POST" enctype="multipart/form-data" id="avatar-form">
+                <form class="md-form" action="{{ route('platform.edit.profile.avatar') }}" method="POST" enctype="multipart/form-data" id="avatarForm">
                     {{csrf_field()}}
                     <div class="file-field">
                         <div class="z-depth-1-half mb-4">
@@ -41,9 +55,10 @@
                         <div class="d-flex justify-content-center">
                             <div class="btn btn-mdb-color btn-rounded float-left waves-effect">
                                 <span>Choose file</span>
-                                <input type="file" name="file" id="avatar-file">
+                                <input type="file" name="file" id="avatar-file" accept="image/*">
                             </div>
                         </div>
+                        <input type="submit" id="avatarSubmit" style="display: none" />
                     </div>
                 </form>
             </div>
@@ -152,11 +167,100 @@
 
             </div><!-- col-9 -->
         </div><!-- row -->
+        {{--<div id="avatarModal" class="modal fade">--}}
+            {{--<div class="modal-dialog modal-lg" role="document">--}}
+                {{--<div class="modal-content tx-size-sm">--}}
+                    {{--<div class="modal-header pd-x-20">--}}
+                        {{--<h6 class="tx-14 mg-b-0 tx-uppercase tx-inverse tx-bold">Crop Image</h6>--}}
+                        {{--<button type="button" class="close" data-dismiss="modal" aria-label="Close">--}}
+                            {{--<span aria-hidden="true">&times;</span>--}}
+                        {{--</button>--}}
+                    {{--</div>--}}
+                    {{--<div class="modal-body pd-20">--}}
+                        {{--<div class="row">--}}
+
+                            {{--<div class="col-md-12 col-lg-12 mg-t-30 mg-md-t-0">--}}
+                                {{--<div class="img-container">--}}
+                                    {{--<img  src="http://www.second-sixinsix.loc/uploads/avatars/1528084747.jpeg"  id="image-profile">--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-md-4 col-lg-3 mg-t-30 mg-md-t-0">--}}
+                                {{--<h4 class=" lh-3 mg-b-20"><a href="" class="tx-inverse hover-primary">Why We Use Electoral College, Not Popular Vote</a></h4>--}}
+                                {{--<p class="mg-b-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>--}}
+                                {{--<div class="docs-preview">--}}
+                                    {{--<div class="img-preview preview-lg"></div>--}}
+                                    {{--<div class="img-preview preview-md"></div>--}}
+                                    {{--<div class="img-preview preview-sm"></div>--}}
+                                    {{--<div class="img-preview preview-xs"></div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div><!-- modal-body -->--}}
+                    {{--<div class="modal-footer">--}}
+                        {{--<button type="button" class="btn btn-default pd-x-20">Save changes</button>--}}
+                        {{--<button type="button" class="btn btn-secondary pd-x-20" data-dismiss="modal">Close</button>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<button onclick="showModal()" >Modal Show</button>--}}
+        {{--<button type="button" class="btn btn-primary" data-target="#modal" data-toggle="modal" id="button-lunch">--}}
+            {{--Launch the demo--}}
+        {{--</button>--}}
+        {{--<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">--}}
+            {{--<div class="modal-dialog modal-lg" role="document">--}}
+                {{--<div class="modal-content">--}}
+                    {{--<div class="modal-header">--}}
+                        {{--<h5 class="modal-title" id="modalLabel">Cropper</h5>--}}
+                        {{--<button type="button" class="close" data-dismiss="modal" aria-label="Close">--}}
+                            {{--<span aria-hidden="true">&times;</span>--}}
+                        {{--</button>--}}
+                    {{--</div>--}}
+                    {{--<div class="modal-body">--}}
+                        {{--<div class="img-container" style="width: 100%; height:auto;">--}}
+                            {{--<img id="image123"  alt="Picture">--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="modal-footer">--}}
+                        {{--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    </div>
         @endsection
         @section('custom-js')
+            {{--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>--}}
+
             <script>
-                $("#avatar-file").change(function() {
-                    $("#avatar-form").submit();
-                });
+
+                    $("#avatar-file").change(function (e) {
+                        var fileSelect = document.getElementById('avatar-file');
+                        var files = fileSelect.files;
+                        console.log(files.length);
+                        var formData = new FormData();
+                        formData.append('file', files[0], files[0].name)
+                        console.log(formData);
+                        $.ajax({
+                            url: '{{ route('platform.edit.profile.avatar') }}',
+                            type: 'POST',
+                            data: formData,
+                            cache: false,
+                            dataType: 'json',
+                            processData: false, // Don't process the files
+                            contentType: false, // Set content type to false as jQuery will tell the server its a query string request
+                            success: function(data)
+                            {
+                                if(data.result =='success'){
+                                    if(data.avatar_crop == 1){
+                                        window.location.href="{{ route('platform.edit.profile.crop') }}";
+                                    }
+
+                                }
+                            }
+                        });
+                    });
+
             </script>
+
 @endsection

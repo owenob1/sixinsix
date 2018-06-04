@@ -46,9 +46,10 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::get('/platform/edit/profile', ['as'=>'platform.edit.profile', 'uses' =>'ProfileController@edit']);
 
-    Route::post('platform/edit/profile/password',       ['as'=>'platform.edit.profile.password', 'uses' =>'ProfileController@password']);
-    Route::post('platform/edit/profile/information',    ['as'=>'platform.edit.profile.information', 'uses' =>'ProfileController@information']);
-    Route::post('platform/edit/profile/avatar',         ['as'=>'platform.edit.profile.avatar', 'uses' =>'ProfileController@avatar']);
+    Route::post('platform/edit/profile/password',       ['as'=>'platform.edit.profile.password',        'uses' =>'ProfileController@password']);
+    Route::post('platform/edit/profile/information',    ['as'=>'platform.edit.profile.information',     'uses' =>'ProfileController@information']);
+    Route::post('platform/edit/profile/avatar',         ['as'=>'platform.edit.profile.avatar',          'uses' =>'ProfileController@avatar']);
+    Route::get('platform/edit/profile/avatar_crop',     ['as'=>'platform.edit.profile.crop',            'uses' =>'ProfileController@avatar_crop']);
 
     Route::get('/platform', array('as' => 'platform.pages.dashboard', function () {
         return view('platform.pages.dashboard');

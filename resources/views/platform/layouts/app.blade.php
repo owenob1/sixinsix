@@ -45,6 +45,20 @@
     <!-- Katniss CSS -->
     <link rel="stylesheet" href="{{ asset('platform_assets/css/katniss.css') }}">
     <link rel="stylesheet" href="{{ asset('platform_assets/css/custom.css') }}" >
+      <link href="{{ asset('crop/cropper.css') }}" rel="stylesheet">
+      {{--<link href=" {{ asset('crop/main.css') }}" rel="stylesheet">--}}
+      <style>
+          .img-container {
+              /* Never limit the container height here */
+              max-width: 100%;
+          }
+
+          .img-container img {
+              /* This is important */
+              width: 100%;
+          }
+      </style>
+      @yield('custom-css')
   </head>
 
 <body>
@@ -85,6 +99,7 @@
         <script src="{{ asset('platform_assets/js/katniss.js') }}"></script>
         <script src='https://js.stripe.com/v2/' type='text/javascript'></script>
         <script src="{{asset('platform_assets/js/stripe.js')}}"></script>
+        <script src="{{ asset('crop/cropper.min.js') }}"></script>
         @yield('custom-js')
 </body>
 </html>
