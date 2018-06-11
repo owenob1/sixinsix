@@ -50,6 +50,10 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('platform/edit/profile/information',    ['as'=>'platform.edit.profile.information',     'uses' =>'ProfileController@information']);
     Route::post('platform/edit/profile/avatar',         ['as'=>'platform.edit.profile.avatar',          'uses' =>'ProfileController@avatar']);
     Route::get('platform/edit/profile/avatar_crop',     ['as'=>'platform.edit.profile.crop',            'uses' =>'ProfileController@avatar_crop']);
+    Route::get('platform/settings',                     ['as' =>'platform.settings',                    'uses'  =>'SettingsController@index']);
+    Route::post('platform/settings/subscription',       ['as'=>'platform.settings.subscription',        'uses' =>'SettingsController@subscription']);
+    Route::get('platform/settings/cancelSubscription', ['as'=>'platform.settings.cancelSubscription',  'uses' =>'SettingsController@cancelSubscription']);
+    Route::get('platform/settings/resumeSubscription', ['as'=>'platform.settings.resumeSubscription',  'uses' =>'SettingsController@resumeSubscription']);
 
     Route::get('/platform', array('as' => 'platform.pages.dashboard', function () {
         return view('platform.pages.dashboard');
@@ -63,6 +67,7 @@ Route::group(['middleware' => ['auth']], function () {
         return view('platform.pages.userprofile.edit');
     }))->middleware('auth');
 
+
     Route::get('/platform/billing/invoices', 'SubscribeController@invoices')->middleware('auth');
 
     Route::get('/platform/billing/invoice/{invoice_id}', 'SubscribeController@invoice')->middleware('auth');
@@ -71,6 +76,10 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::post('/platform/payment', 'SubscribeController@proccessSubscription')->middleware('auth');
 
+    Route::post(
+        'stripe/webhook',
+        '\Laravel\Cashier\Http\Controllers\WebhookController@handleWebhook'
+    );
 
 
 });

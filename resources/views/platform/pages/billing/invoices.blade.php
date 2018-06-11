@@ -23,14 +23,16 @@
                    </tr>
                  </thead>
                  <tbody>
-                @foreach ($invoices as $invoice)
-                   <tr>
-                     <td>{{ $invoice->date()->toFormattedDateString() }}</td>
-                     <td>Startup Growth Plan</td>
-                     <td>{{ $invoice->total() }}</td>
-                     <td><a href="/platform/billing/invoice/{{ $invoice->id }}"><i class="icon ion-document-text"></i> Download</a></td>
-                   </tr>
-                 @endforeach
+                   @if(count($invoices) >0)
+                      @foreach ($invoices as $invoice)
+                         <tr>
+                           <td>{{ $invoice->date()->toFormattedDateString() }}</td>
+                           <td>Startup Growth Plan</td>
+                           <td>{{ $invoice->total() }}</td>
+                           <td><a href="/platform/billing/invoice/{{ $invoice->id }}"><i class="icon ion-document-text"></i> Download</a></td>
+                         </tr>
+                       @endforeach
+                    @endif
                  </tbody>
                </table>
              </div><!-- table-responsive -->

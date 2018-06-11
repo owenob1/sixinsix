@@ -9,6 +9,7 @@ use Laravel\Cashier\Billable;
 class User extends Authenticatable
 {
     use Notifiable, Billable;
+    protected $dates = ['trial_ends_at', 'subscription_ends_at'];
 
     /**
      * The attributes that are mass assignable.

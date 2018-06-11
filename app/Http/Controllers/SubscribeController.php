@@ -36,6 +36,7 @@ class SubscribeController extends Controller
 
     public function cancel()
     {
+        $user = auth()->user();
         if ($user->subscription('main')->onGracePeriod()) {
             //
         }
@@ -47,15 +48,21 @@ class SubscribeController extends Controller
     {
         $user = auth()->user();
 
-            try {
-                Stripe::setApiKey(env('STRIPE_SECRET'));
+        $invoices = [];
+            if($user->stripe_id != ''){
+                try {
+                    Stripe::setApiKey(env('STRIPE_SECRET'));
 
-                $invoices = $user->invoices();
+                    $invoices = $user->invoices();
 
+                    return view('platform/pages/billing/invoices', compact('invoices'));
+                } catch (\Exception $ex) {
+                    return $ex->getMessage();
+                }
+            }else {
                 return view('platform/pages/billing/invoices', compact('invoices'));
-            } catch (\Exception $ex) {
-                return $ex->getMessage();
             }
+
 
     }
 

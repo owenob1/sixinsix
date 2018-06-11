@@ -76,9 +76,7 @@
             <li><a href="{{ route('admin.dashboard') }}"><i class="icon ion-home"></i> Admin</a></li>
           @endif
           <li><a href="{{ route('platform.edit.profile') }}"><i class="icon ion-ios-person-outline"></i> Edit Profile</a></li>
-
-
-          <li><a href=""><i class="icon ion-ios-gear-outline"></i> Settings</a></li>
+          <li><a href="{{ route('platform.settings') }}"><i class="icon ion-ios-gear-outline"></i> Settings</a></li>
           <li><a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="icon ion-power"></i> {{ __('Logout') }}</a></li>
           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
             @csrf
