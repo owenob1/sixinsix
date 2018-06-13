@@ -3,8 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Carbon\Carbon;
-use Stripe_Customer;
+use App\StripePlan;
 
 class SettingsController extends Controller
 {
@@ -14,23 +13,12 @@ class SettingsController extends Controller
     }
     public function index() {
         $user = \Auth::user();
-        if($user->subscribed('main')){
-            echo "sdfsdf";
-        }else {
-           echo "sdfsdfsdfsdfsf";
-        }
-//        if ($user->subscription('main')->onTrial()) {
-//            echo "sdfsdf";
-//        }else{
-//            echo "exit";
-//        }
-//        exit;
-
-            return view('platform.pages.settings.index')->with(['user' => $user]);
+        $plans = StripePlan::all();
+        return view('platform.pages.settings.index')->with(['user' => $user, 'plans' =>$plans]);
     }
     public function subscription(Request $request){
         $user = \Auth::user();
-        $plan = env('STRIPE_PLAN');
+        $plan = $request->get('subscription');
         $user->newSubscription('main',$plan)->create($request->token);
         if ($user->subscribed('main')) {
 
@@ -62,7 +50,15 @@ class SettingsController extends Controller
         $user = \Auth::user();
         $user->subscription('main')->resume();
         return redirect()->route('platform.settings')->with('success_cancel', 'Your subscription has been resumed successfully.');
+    }
 
+    public function upgradeSubscription(Request $request){
+        $plan = $request->get('subscription');
+        $user = \Auth::user();
+        $user->subscription('main')
+            ->skipTrial()
+            ->swap($plan);
+        return redirect()->route('platform.settings')->with('success_cancel', 'Your subscription has been changed successfully.');
     }
 
 

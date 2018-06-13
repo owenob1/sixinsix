@@ -45,7 +45,10 @@
                             <td>{{ $value->title }}</td>
                             <td>{{ $value->tag }}</td>
                             <td><img src="{{ $value->image }}" width="150px"/></td>
-                            <td><a href="{{route('admin.blog.edit', $value->id)}}" class="btn btn-outline-success active"><i class="icon ion-edit"></i></a></td>
+                            <td>
+                                <a href="{{route('admin.blog.edit', $value->id)}}" class="btn btn-outline-success active"><i class="icon ion-edit"></i></a>
+                                <a href="{{route('admin.blog.delete', $value->id)}}" class="btn btn-outline-danger active"><i class="icon ion-close"></i> </a>
+                            </td>
                         </tr>
                     @endforeach
                     </tbody>

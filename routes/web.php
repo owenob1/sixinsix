@@ -16,12 +16,17 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin']], function 
         return redirect()->route('admin.dashboard');
     });
 
-    Route::get('/',                 ['as' =>'admin.dashboard',          'uses'  =>'Admin\DashboardController@index']);
-    Route::get('/users',            ['as' =>'admin.users',              'uses'  =>'Admin\DashboardController@users']);
-    Route::get('/blog',             ['as' =>'admin.blog',               'uses'  =>'Admin\BlogController@index']);
-    Route::get('/blog/create',      ['as' =>'admin.blog.create',        'uses'  =>'Admin\BlogController@create']);
-    Route::post('/blog/create',     ['as' =>'admin.blog.postCreate',    'uses'  =>'Admin\BlogController@postCreate']);
-    Route::get('/blog/edit/{id}',   ['as' =>'admin.blog.edit',          'uses'  =>'Admin\BlogController@edit']);
+    Route::get('/',                                 ['as' =>'admin.dashboard',              'uses'  =>'Admin\DashboardController@index']);
+    Route::get('/users',                            ['as' =>'admin.users',                  'uses'  =>'Admin\DashboardController@users']);
+    Route::get('/blog',                             ['as' =>'admin.blog',                   'uses'  =>'Admin\BlogController@index']);
+    Route::get('/blog/create',                      ['as' =>'admin.blog.create',            'uses'  =>'Admin\BlogController@create']);
+    Route::post('/blog/create',                     ['as' =>'admin.blog.postCreate',        'uses'  =>'Admin\BlogController@postCreate']);
+    Route::get('/blog/edit/{id}',                   ['as' =>'admin.blog.edit',              'uses'  =>'Admin\BlogController@edit']);
+    Route::get('/blog/delete/{id}',                 ['as' =>'admin.blog.delete',            'uses'  =>'Admin\BlogController@delete']);
+    Route::get('/payments/stripe',                  ['as' =>'admin.payments.stripe',        'uses'  =>'Admin\PaymentController@stripe']);
+    Route::post('/payments/stripe/create',          ['as' =>'admin.payments.stripe.create', 'uses'  =>'Admin\PaymentController@stripeCreate']);
+    Route::post('/payments/stripe/get',             ['as' =>'admin.payments.stripe.get',    'uses'  =>'Admin\PaymentController@getStripePlan']);
+    Route::get('/payments/stripe/delete/{id}',      ['as' =>'admin.payments.stripe.delete', 'uses'  =>'Admin\PaymentController@deleteStripePlan']);
 });
 
 
@@ -52,8 +57,9 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('platform/edit/profile/avatar_crop',     ['as'=>'platform.edit.profile.crop',            'uses' =>'ProfileController@avatar_crop']);
     Route::get('platform/settings',                     ['as' =>'platform.settings',                    'uses'  =>'SettingsController@index']);
     Route::post('platform/settings/subscription',       ['as'=>'platform.settings.subscription',        'uses' =>'SettingsController@subscription']);
-    Route::get('platform/settings/cancelSubscription', ['as'=>'platform.settings.cancelSubscription',  'uses' =>'SettingsController@cancelSubscription']);
-    Route::get('platform/settings/resumeSubscription', ['as'=>'platform.settings.resumeSubscription',  'uses' =>'SettingsController@resumeSubscription']);
+    Route::get('platform/settings/cancelSubscription',  ['as'=>'platform.settings.cancelSubscription',  'uses' =>'SettingsController@cancelSubscription']);
+    Route::get('platform/settings/resumeSubscription',  ['as'=>'platform.settings.resumeSubscription',  'uses' =>'SettingsController@resumeSubscription']);
+    Route::post('platform/settings/upgradeSubscription',['as'=>'platform.settings.upgradeSubscription', 'uses' =>'SettingsController@upgradeSubscription']);
 
     Route::get('/platform', array('as' => 'platform.pages.dashboard', function () {
         return view('platform.pages.dashboard');

@@ -60,3 +60,16 @@
 .padding-40 {
     padding:40px;
 }
+
+/***************form validation **********************/
+
+.error {
+    color: red;
+}
+
+label.error {
+    display: inline;
+}
+.help-block{
+    color: red
+}

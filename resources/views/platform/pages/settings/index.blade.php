@@ -2,7 +2,7 @@
 
 @section('title', 'Edit Profile')
 @section('custom-css')
-    <link rel="stylesheet" href="http://formvalidation.io/vendor/formvalidation/css/formValidation.min.css">
+    <link rel="stylesheet" href="{{ asset('platform_assets/css/formValidation/formValidation.min.css') }}">
 @endsection
 @section('content')
     <div class="kt-pagetitle">
@@ -30,15 +30,45 @@
                                      <p> Your subscription ends date is {{ substr(Auth::user()->subscription('main') ->ends_at, 0, 10)  }}</p>
                                      <a href="{{route('platform.settings.resumeSubscription')}}">Resume Subscription</a>
                                 @else
-                                     <p>If you want to cancel subscription , you can click this link  <a href="{{route('platform.settings.cancelSubscription')}}">Cancel Subscription</a></p>
+                                     <p class="">If you want to cancel subscription , you can click this link  <a href="{{route('platform.settings.cancelSubscription')}}">Cancel Subscription</a></p>
+                                     <p class="mg-b-20">Do you want to change subscription plan? <a href="javascript:void(0)" onclick="onShowChangeForm()">Change Subscription Plan</a></p>
+                                    <div class="card pd-20 pd-sm-40" id="subscriptionChangeFormDiv" style="display: none;">
+                                        <h6 class="mg-b-20">Change Subscription Form</h6>
+                                        <form id="paymentPlanChangeForm" action="{{route('platform.settings.upgradeSubscription')}}" method="POST">
+                                            {{csrf_field()}}
+                                            <div class="form-group">
+                                                <label class=" control-label">Subscription Plan: <span class="tx-danger">*</span></label>
+                                                <select name="subscription" class="form-control">
+                                                    @if(count($plans) >0)
+                                                        @foreach($plans as $key=> $plan)
+                                                            <option value="{{$plan->plan_code }}" @if($plan->id == Auth::user()->subscription('main')->id)  selected @endif>{{$plan->title}} (${{$plan->price}}/{{$plan->duration}})</option>
+                                                        @endforeach
+                                                    @endif
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-primary">Update</button>
+                                            </div>
+                                        </form>
+                                    </div>
                                 @endif
                                 </div>
                         @else
                             <form id="paymentForm">
                                 <input type="hidden" name="_token" value="{{csrf_token()}}">
                                 <div class="form-group">
+                                    <label class=" control-label">Subscription Plan: <span class="tx-danger">*</span></label>
+                                    <select name="subscription" class="form-control">
+                                        @if(count($plans) >0)
+                                            @foreach($plans as $key=> $plan)
+                                                <option value="{{$plan->plan_code }}">{{$plan->title}} (${{$plan->price}}/{{$plan->duration}})</option>
+                                            @endforeach
+                                        @endif
+                                    </select>
+                                </div>
+                                <div class="form-group">
                                     <label class="form-control-label">Credit card number: <span class="tx-danger">*</span></label>
-                                    <input type="text" class="form-control" data-stripe="number" />
+                                    <input type="text" class="form-control" data-stripe="number" placeholder="Credit card number"/>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label">Expiration: <span class="tx-danger">*</span></label>
@@ -62,18 +92,6 @@
                                 <input type="hidden" name="token" value="" />
                             </form>
                         @endif
-
-                        {{--@if(!Auth::user()->subscribed('main'))--}}
-{{--                        @if(!Auth::user()->subscription('main')->onTrial())--}}
-
-                        {{--@else--}}
-                            {{--<div class="col-sm-12">--}}
-                                {{--<p> Your trial ends date is {{ substr(Auth::user()->trial_ends_at, 0, 10)  }}</p>--}}
-                                {{--@if (Auth::user()->subscription('main')->cancelled())--}}
-                                    {{--<a href="{{route('platform.settings.cancelSubscription')}}">Cancel Subscription</a>--}}
-                                {{--@endif--}}
-                            {{--</div>--}}
-                        {{--@endif--}}
                     </div>
                 </div>
             </div>
@@ -81,8 +99,8 @@
     </div>
 @endsection
 @section('custom-js')
-    <script src="http://formvalidation.io/vendor/formvalidation/js/formValidation.min.js"></script>
-    <script src="http://formvalidation.io/vendor/formvalidation/js/framework/bootstrap.min.js"></script>
+    <script src="{{ asset('platform_assets/js/formValidation/formValidation.min.js') }}"></script>
+    <script src="{{ asset('platform_assets/js/formValidation/bootstrap.min.js') }}"></script>
     <script>
         $(document).ready(function() {
             // Change the key to your one
@@ -96,10 +114,10 @@
                         validating: 'glyphicon glyphicon-refresh'
                     },
                     fields: {
-//                        name: {
+//                        subscription: {
 //                            validators: {
 //                                notEmpty: {
-//                                    message: 'The name is required'
+//                                    message: 'The subscription is required'
 //                                }
 //                            }
 //                        },
@@ -220,8 +238,6 @@
                             alert(response.error.message);
                         } else {
                             // Set the token value
-                            console.log(response);
-                            alert(response.id);
                             $form.find('[name="token"]').val(response.id);
                             // Or using Ajax
                             $.ajax({
@@ -234,12 +250,22 @@
                                 alert(data.msg);
                                 // Reset the form
                                 $form.formValidation('resetForm', true);
+                                window.location.reload();
                             });
                         }
                     });
                 });
 
         });
+        var clicks =0;
+        function onShowChangeForm(){
+            if(clicks % 2 == 0){
+                $("#subscriptionChangeFormDiv").show();
+            }else{
+                $("#subscriptionChangeFormDiv").hide();
+            }
+            clicks++;
+        }
     </script>
 
 @endsection

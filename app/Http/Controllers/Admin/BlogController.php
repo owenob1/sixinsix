@@ -95,4 +95,10 @@ class BlogController extends Controller
         $blog = Blog::findOrFail($id);
         return view('admin.pages.blog.edit')->with(['blog' =>$blog]);
     }
+
+    public function delete($id){
+        $blog = Blog::findOrFail($id);
+        $blog->delete();
+        return redirect()->route('admin.blog')->with('success_information', 'Blog removed successfully.');
+    }
 }

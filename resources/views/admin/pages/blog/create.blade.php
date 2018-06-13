@@ -63,7 +63,7 @@
     </div>
 @endsection
 @section('custom-js')
-    <script src="{{ asset('js/tinymce/tinymce.min.js') }}"></script>
+    <script src="{{ asset('platform_assets/js/tinymce/tinymce.min.js') }}"></script>
 
     {{--<script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>--}}
     <script>

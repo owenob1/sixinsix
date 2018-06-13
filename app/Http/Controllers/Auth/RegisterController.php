@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Auth\Events\Registered;
 Use Illuminate\Http\Request;
+use App\StripePlan;
+use App\RoleUser;
 
 class RegisterController extends Controller
 {
@@ -96,8 +98,18 @@ class RegisterController extends Controller
 
         $url = route('confirmGuest', [$user->confirmation_code, $user->id ]);
         \Mail::to($user->email)->send(new userCreated($url, $user, $profile));
-        $this->guard()->logout($user);
-        return redirect()->route('login')->with('message', 'Your account has been created successfully. Please verify your email address');
+
+        $plan = $request->get('subscription');
+        $user->newSubscription('main',$plan)->create($request->token);
+        if ($user->subscribed('main')) {
+            $this->guard()->logout($user);
+            return response()->json(['msg'=>'Your account has been created successfully. Please verify your email address']);
+        }
+
+        return response()->json(['msg'=>'Oops there is something error with your input']);
+
+
+//        return redirect()->route('login')->with('message', 'Your account has been created successfully. Please verify your email address');
     }
 
     public static function quickRandom($length = 16)
@@ -105,5 +117,11 @@ class RegisterController extends Controller
         $pool = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
         return substr(str_shuffle(str_repeat($pool, 5)), 0, $length);
+    }
+
+    public function showRegistrationForm()
+    {
+        $plans=StripePlan::all();
+        return view('auth.register', compact('plans'));
     }
 }

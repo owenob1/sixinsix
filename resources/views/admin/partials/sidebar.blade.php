@@ -51,6 +51,19 @@ k<!-- ##### SIDEBAR LOGO ##### -->
                 </li>
             </ul>
         </li>
+        <!-- nav-item -->
+        <li class="nav-item">
+            <a href="#" class="nav-link with-sub @if((\Request::route()->getName() == 'admin.payments.stripe')) active @endif">
+                <i class="icon ion-card"></i>
+                <span>Payment Settings</span>
+            </a>
+            <ul class="nav-sub" >
+                <li class="nav-item">
+                    <a href="{{ route('admin.payments.stripe') }}" class="nav-link {{ (\Request::route()->getName() == 'admin.payments.stripe') ? 'active' : '' }}">Stripe Plans</a>
+                </li>
+            </ul>
+        </li>
+
 
 
 

@@ -40,6 +40,8 @@
 
     <!-- Katniss CSS -->
     <link rel="stylesheet" href="../platform_assets/css/katniss.css">
+    <link rel="stylesheet" href="{{ asset('platform_assets/css/custom.css') }}" >
+    @yield('custom-css')
 </head>
 
 <body>
@@ -54,5 +56,7 @@
     <script src="../platform_assets/lib/moment/moment.js"></script>
     <script src="../platform_assets/lib/highlightjs/highlight.pack.js"></script>
     <script src="../platform_assets/js/katniss.js"></script>
+    <script src='https://js.stripe.com/v2/' type='text/javascript'></script>
+    @yield('custom-js')
 </body>
 </html>
