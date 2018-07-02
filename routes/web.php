@@ -28,11 +28,11 @@ Route::get('/platform/billing/invoice/{invoice_id}', 'SubscribeController@invoic
 
 Route::get('/platform/payment', 'SubscribeController@index')->middleware('auth');
 
-<<<<<<< HEAD
+
 Route::post('/platform/payment', 'SubscribeController@proccessSubscription')->middleware('auth');
 
 
-=======
+
 Route::get('/about', 'AboutController@index')->name('about-us');
 Route::get('/blog', 'BlogController@index')->name('blog');
 Route::get('blog/{slug}','BlogController@item')->name('blogItem');
@@ -40,7 +40,7 @@ Route::get('/contact', 'ContactController@index')->name('contact-us');
 Route::get('/faq', 'FaqController@index')->name('faqs');
 Route::get('/portfolios', 'PortfolioController@index')->name('portfolios');
 Route::get('/services', 'ServiceController@index')->name('services');
->>>>>>> parent of b418ef1... sdf
+
 
 Route::get('/platform/bugreport', array('as' => 'platform.pages.bugreport', function () {
     return view('platform.pages.bugreport');
