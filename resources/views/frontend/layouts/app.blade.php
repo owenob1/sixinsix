@@ -46,7 +46,7 @@
 						<li><a href="#home">Home</a></li>
 						<li><a href="#what">About Us</a></li>
 						<li><a href="#who">Who is it for?</a></li>
-						<li><a href="#process1">Our Services</a></li>
+						<li><a href="#process1">Our Services </a></li>
 						<li><a href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-filled btn-primary btn-xs"><i class="i-before ti-user"></i>Book Consultation</button></a></li>
 					</ul>
 				</div>
