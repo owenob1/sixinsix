@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="author" content="SixInSix">
 	<!-- Title -->
-	<title>SixInSix | Digital Growth Consulting</title>
+	<title>SixInSix | Online Traffic & Growth Hacking Consulting</title>
 	<!-- Favicons -->
 	<link rel="shortcut icon" href="../assets/img/favicon.png">
 	<link rel="apple-touch-icon" href="../assets/img/favicon_60x60.png">
@@ -44,7 +44,7 @@
 				<div class="module menu left">
 					<ul id="nav-primary" class="nav nav-primary">
 						<li><a href="#home">Home</a></li>
-						<li><a href="#what">About Us</a></li>
+						<li><a href="#what">What is it?</a></li>
 						<li><a href="#who">Who is it for?</a></li>
 						<li><a href="#process1">Our Services </a></li>
 						<li><a href="" onclick="Calendly.showPopupWidget('https://calendly.com/sixinsix/60min');return false;"><button type="button" class="btn btn-filled btn-primary btn-xs"><i class="i-before ti-user"></i>Book Consultation</button></a></li>
@@ -90,7 +90,19 @@
 			gtag('js', new Date());
 			gtag('config', 'UA-116008327-1');
 		</script>
+		<script type="text/javascript">
+		var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
+		{widgetcode:"162479406400d40037c41ddb0b42209644b72d7c26ca76361db2ee0c0494f591bb970538b5c1aa88c9e268b80446e0a0", values:{},ready:function(){}};
+		var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+		s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+		</script>
 
+		<script type="text/javascript">
+var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
+{widgetcode:"162479406400d40037c41ddb0b42209644b72d7c26ca76361db2ee0c0494f591bb970538b5c1aa88c9e268b80446e0a0", values:{},ready:function(){}};
+var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+</script>
 
 	</body>
 
