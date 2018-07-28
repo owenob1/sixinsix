@@ -8,6 +8,11 @@ Route::get('/welcome', function () {
     return view('frontend.onboard');
 });
 
+Route::get('/clock', function () {
+    return view('frontend.clock');
+});
+
+
 Route::get('/platform', array('as' => 'platform.pages.dashboard', function () {
     return view('platform.pages.dashboard');
 }))->middleware('auth');
@@ -30,7 +35,6 @@ Route::get('/platform/payment', 'SubscribeController@index')->middleware('auth')
 
 
 Route::post('/platform/payment', 'SubscribeController@proccessSubscription')->middleware('auth');
-
 
 
 Route::get('/about', 'AboutController@index')->name('about-us');
