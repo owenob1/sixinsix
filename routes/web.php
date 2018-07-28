@@ -4,6 +4,10 @@ Route::get('/clock', function () {
     return view('frontend.clock');
 });
 
+Route::get('/clock1', function () {
+    return view('frontend.clock');
+});
+
 Route::get('/', function () {
     return view('frontend.index');
 });
