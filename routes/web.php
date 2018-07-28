@@ -1,5 +1,9 @@
 <?php
 
+Route::get('/clock', function () {
+    return view('frontend.clock');
+});
+
 Route::get('/', function () {
     return view('frontend.index');
 });
@@ -7,11 +11,6 @@ Route::get('/', function () {
 Route::get('/welcome', function () {
     return view('frontend.onboard');
 });
-
-Route::get('/clock', function () {
-    return view('frontend.clock');
-});
-
 
 Route::get('/platform', array('as' => 'platform.pages.dashboard', function () {
     return view('platform.pages.dashboard');
